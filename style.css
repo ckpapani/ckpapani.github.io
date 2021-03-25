@@ -1,63 +1,8 @@
-@media (max-width:420px) {
-    #inputs {
-        margin: auto;
-        width: max-content;
-    }
-}
-
-@media (min-width: 421px) {
-    #inputs {
-        margin: auto;
-        width: 50%;
-        padding: 10px;
-    }
-}
-
-body {
+#belowNavbar{
     background-color: #50543f;
-    color: white;
-    font-size: 1em;
 }
-
-h1,
-h2,
-h3,
-h4 {
-    color: yellow;
-    text-align: center;
-}
-
-#alpha,
-#beta,
-#gamma {
-    width: 3em;
-    background-color: #50543f;
-    color: white;
-    border-radius: 10px;
-}
-
-
-#printDiak {
+#listGroup{
+    width: 60%;
     margin: auto;
-    width: 20%;
-}
-
-#btn1,
-#btn2 {
-    border-radius: 10px;
-    background-color: #50543f;
-    color: white;
-}
-
-
-#printRoots,
-#printDiak {
-    text-align: center;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    background-color: darkolivegreen;
-    color: yellow;
-    border-radius: 10px;
-    border: white solid 1px;
-    visibility: hidden;
+    border: 1px solid lightgray
 }
