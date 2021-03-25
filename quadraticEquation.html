@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="quadraticEquation.css"> -->
+    <script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <script src="quadraticEquation.js" defer></script> -->
+    <title>Επίλυση τριωνύμου</title>
+
+    <style>
+        @media (max-width:420px) {
+            #inputs{
+            margin: auto;
+            width: max-content;
+        }
+        }
+
+        @media (min-width: 421px) {
+            #inputs{
+                margin: auto;
+                width: 50%;
+                padding: 10px;
+            }   
+        }
+
+        body{
+            background-color: #50543f;
+            color: white;
+            font-size: 1em;
+        }
+
+        h1,h2,h3,h4{
+            color: yellow;
+            text-align: center;
+        }
+
+        #alpha, #beta, #gamma {
+            width: 3em;
+            background-color: #50543f;
+            color: white;
+            border-radius: 10px;
+        }
+        
+
+        #printDiak{
+            margin: auto;
+            width: 20%;
+        }
+
+        #btn1, #btn2 {
+            border-radius: 10px;
+            background-color: #50543f;
+            color: white;
+        }
+
+
+        #printRoots, #printDiak{
+            text-align: center;
+            margin-top: 2em;
+            margin-bottom: 2em;
+            background-color: darkolivegreen;
+            color: yellow;
+            border-radius: 10px;
+            border: white solid 1px;
+            visibility: hidden;
+        }
+    </style>
+
+    
+</head>
+
+<body>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">MathVideos</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Αρχική</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Videos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Εισαγωγικά</a></li>
+                
+                    <li><a class="dropdown-item" href="#">Α' Λυκείου</a></li>
+                    
+                    <li><a class="dropdown-item" href="#">Β' Λυκείου</a></li>
+
+                    <li><a class="dropdown-item" href="#">Πανεπιστήμιο</a></li>
+                </ul>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="InterestsPages.html">Μαθηματικές Σελίδες</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="quadraticEquation.html">Τριώνυμο</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">Ποιος είμαι</a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li> -->
+            </ul>   
+        </div>
+        </div>
+    </nav>
+<!-- !Navigation Bar -->
+
+<div class="h-auto p-5" id="belowNavbar">
+    <header class="display-3" style="color: white; text-align: center;">Επίλυση δευτεροβάθμιας εξίσωσης</header>
+    <header class="display-5" style="color: whitesmoke ; opacity: 0.4; text-align: center;">Τριώνυμο</header>
+</div>
+
+
+    <h3>Επίλυση δευτεροβάθμιας εξίσωσης</h3>
+    <h4>\[αx^2 + βx + γ = 0\]</h4><br>
+    Σε αυτή την εφαρμογή που σας έχω φτιάξει, θα μπορείτε να δείτε τη λύση μίας <strong>οποιασδήποτε</strong> δευτεροβάθμιας εξίσωσης, αρκεί να εισάγετε τις τιμές α, β και γ του τριωνύμου (προσοχή στα πρόσημα! Κάθε αριθμός έχει και το πρόσημό του!). <br>
+    
+    <div id="inputs">
+        <input type="number" id="alpha" name="alpha" placeholder="α"> \(x^2\)+
+        <input type="number" id="beta" name="beta" placeholder="β"> \(x\)+
+        <input type="number" id="gamma" name="gamma" placeholder="γ"> = 0
+    </div>
+<hr>
+
+
+    <h4>Διακρίνουσα </h4>
+    Η διακρίνουσα ξεχωρίζει (διακρίνει) πόσες ακριβώς ρίζες έχει η εξίσωσή μας. Δηλαδή μας λέει αν έχει δύο, μία ή καμία ρίζα. Ο τύπος της είναι ο 
+    \[Δ = β^2 - 4 \cdot α \cdot γ\]
+    
+    <div id="diakrinousa">
+        <div id="printDiak"></div>
+        <button id="btn1">Υπολογισμός:</button>
+    </div>
+
+<hr>
+
+    <h4>Οι ρίζες της εξίσωσης (Οι λύσεις δηλαδή)</h4>
+    Αν η διακρίνουσα είναι θετική ή μηδέν, τότε η εξίσωση έχει δύο ρίζες οι οποίες δίνονται από τους τύπους:
+    \[ρ_1 = \frac{-β + \sqrt{Δ}}{2\cdot α},\qquad ρ_2 = \frac{-β - \sqrt{Δ}}{2\cdot α}\]
+    Ενώ στην περίπτωση που η διακρίνουσα είναι αρνητική, τότε η εξίσωση δεν έχει καμία ρίζα.
+    
+    <div id="roots">
+        <div id="printRoots"></div>
+        <button id="btn2">Υπολογισμός:</button>
+    </div>
+
+
+    
+    <script>
+        const alpha = document.querySelector("#alpha");
+        const beta = document.querySelector("#beta");
+        const gamma = document.querySelector("#gamma");
+        const btn1 = document.querySelector("#btn1");
+        const btn2 = document.querySelector("#btn2");
+        const result1 = document.querySelector("#printDiak");
+        const result2 = document.querySelector("#printRoots");
+
+
+        btn1.addEventListener("click",onClickButton1);
+        btn2.addEventListener("click",onClickButton2);
+
+        function onClickButton1(){
+            if(alpha.value == 0){
+                alert("Το α δεν πρέπει να είναι μηδέν γιατί τότε μιλάμε για πρώτου βαθμού εξίσωση!");
+                alpha.value = "";
+            }
+            a = alpha.value;
+            b = beta.value;
+            c = gamma.value;
+
+            D = diakrinousa(a,b,c); 
+            result1.textContent= "Δ = "+ D;
+            result1.style.visibility="visible";
+        }
+
+        function onClickButton2(){
+            if(D>0){
+                r1 = (-b+Math.sqrt(D))/(2*a);
+                r2 = (-b-Math.sqrt(D))/(2*a);
+                result2.textContent=`Οι ρίζες της εξίσωσης είναι το ${r1} και το ${r2}` ;
+                result2.style.visibility="visible";
+            }
+            else if(D==0){
+                r = -b/(2*a);
+                result2.textContent=`Επειδή η διακρίνουσα είναι μηδέν, η εξίσωση έχει μία διπλή ρίζα, την ${r}`;
+                result2.style.visibility="visible";
+            }
+
+            else {
+                result2.textContent="Η εξίσωση δεν έχει ρίζες αφού η διακρίνουσα είναι αρνητική";
+                result2.style.visibility="visible";
+            }
+        }
+
+        function diakrinousa(a,b,c){
+            return b**2 - 4*a*c;
+        }
+    </script>
+
+
+
+
+
+
+</body>
+</html>
