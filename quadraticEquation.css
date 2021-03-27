@@ -17,7 +17,7 @@ h1,h2,h3,h4,header{
 }
 
 p{
-    margin: 3em;
+    margin: 2em;
     text-align: justify;
 }
 
@@ -25,10 +25,6 @@ p{
     text-align: center;
 }
 
-#printDiak{
-    margin: auto;
-    width: 60%;
-}
 
 /* #btn1,#btn2 {
     border-radius: 10px;
@@ -40,14 +36,19 @@ p{
 
 
 #printRoots, #printDiak{
-    width: 70%;
+    width: 50%;
     margin: auto;
     margin-bottom: 2em;
+    padding: 1em;
     text-align: center;
     background-color: darkolivegreen;
     color: yellow;
     border-radius: 10px;
     border: white solid 1px;
     visibility: hidden;
+}
+
+#printDiak{
+    width: 30%;
 }
     

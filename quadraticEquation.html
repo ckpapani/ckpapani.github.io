@@ -74,28 +74,31 @@
     <header class="display-3" style="color: white; text-align: center;">Επίλυση δευτεροβάθμιας εξίσωσης</header>
     <header class="display-5" style="color: whitesmoke ; opacity: 0.7; text-align: center;">\[αx^2 + βx + γ = 0\]</header>
     </div>
-
-    <p>Σε αυτή την εφαρμογή που έχω φτιάξει, θα μπορείτε να δείτε τη λύση μίας <strong>οποιασδήποτε</strong> δευτεροβάθμιας εξίσωσης, αρκεί να εισάγετε τις τιμές α, β και γ του τριωνύμου (προσοχή στα πρόσημα! Κάθε αριθμός έχει και το πρόσημό του!).</p>
     
     <div id="inputs">
         <input type="number" id="alpha" name="alpha" placeholder="α"> \(x^2\)+
         <input type="number" id="beta" name="beta" placeholder="β"> \(x\)+
         <input type="number" id="gamma" name="gamma" placeholder="γ"> = 0
     </div>
+
+    <p>Σε αυτή την εφαρμογή που έχω φτιάξει, θα μπορείτε να δείτε τη λύση μίας <strong>οποιασδήποτε</strong> δευτεροβάθμιας εξίσωσης, αρκεί να εισάγετε τις τιμές α, β και γ του τριωνύμου (προσοχή στα πρόσημα! Κάθε αριθμός έχει και το πρόσημό του!).</p>
+    
 <hr>
 
 
     <header class="display-6">Διακρίνουσα </header>
-    <div class="container">
-    <div class="row align-items-center justify-content-around">
-        <div class="col-5" style="text-align: justify;">Η διακρίνουσα ξεχωρίζει (διακρίνει) πόσες ακριβώς ρίζες έχει η εξίσωσή μας. Δηλαδή μας λέει αν έχει δύο, μία ή καμία ρίζα. Ο τύπος της είναι ο 
+    
+    
+        <div style="text-align: justify; padding: 2em;">Η διακρίνουσα ξεχωρίζει (διακρίνει) πόσες ακριβώς ρίζες έχει η εξίσωσή μας. Δηλαδή μας λέει αν έχει δύο, μία ή καμία ρίζα. Ο τύπος της είναι ο 
             \[Δ = β^2 - 4 \cdot α \cdot γ\]
         </div>
         
-        <div class="col-5" style="text-align: justify; ">
+        
+        <div style="margin: 0 2em 3em 2em ;">
             <div id="printDiak"></div>
             <button type="button" class="btn btn-warning" id="btn1">Υπολογισμός</button>
         </div>
+        
     </div>
 
     </div>  
@@ -105,7 +108,7 @@
 <hr>
 
     <header class="display-6" style="text-align: center;">Οι ρίζες της εξίσωσης <br> (Οι λύσεις δηλαδή)</header>
-        <div style="padding: 2em;">
+        <div style="padding: 2em; text-align: justify;">
             Αν η διακρίνουσα είναι θετική ή μηδέν, τότε η εξίσωση έχει δύο ρίζες οι οποίες δίνονται από τους τύπους:
             \[ρ_1 = \frac{-β + \sqrt{Δ}}{2\cdot α},\quad ρ_2 = \frac{-β - \sqrt{Δ}}{2\cdot α}\]
             Ενώ στην περίπτωση που η διακρίνουσα είναι αρνητική, τότε η εξίσωση δεν έχει καμία ρίζα.
