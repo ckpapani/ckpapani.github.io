@@ -1,0 +1,53 @@
+body{
+    background-color: #50543f;
+    color: white;
+    font-size: 1em;
+}
+
+h1,h2,h3,h4,header{
+    color: yellow;
+    text-align: center;
+}
+
+#alpha, #beta, #gamma {
+    width: 3em;
+    background-color: #50543f;
+    color: white;
+    border-radius: 10px;
+}
+
+p{
+    margin: 3em;
+    text-align: justify;
+}
+
+#inputs{
+    text-align: center;
+}
+
+#printDiak{
+    margin: auto;
+    width: 60%;
+}
+
+/* #btn1,#btn2 {
+    border-radius: 10px;
+    background-color:yellow;
+    color:#50543f;
+    align-content: center;
+    width: 10em;
+} */
+
+
+#printRoots, #printDiak{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 2em;
+    text-align: center;
+    background-color: darkolivegreen;
+    color: yellow;
+    border-radius: 10px;
+    border: white solid 1px;
+    visibility: hidden;
+}
+    
