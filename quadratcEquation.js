@@ -20,7 +20,7 @@ function onClickButton1(){
     c = gamma.value;
 
     D = diakrinousa(a,b,c); 
-    result1.textContent= "Δ = "+ D;
+    result1.textContent= "Η διακρίνουσα είναι Δ = "+ D;
     result1.style.visibility="visible";
 }
 
@@ -28,12 +28,12 @@ function onClickButton2(){
     if(D>0){
         r1 = (-b+Math.sqrt(D))/(2*a);
         r2 = (-b-Math.sqrt(D))/(2*a);
-        result2.textContent=`Οι ρίζες της εξίσωσης είναι το ${r1} και το ${r2}` ;
+        result2.textContent=`Οι ρίζες της εξίσωσης είναι η ${r1} και το ${r2}` ;
         result2.style.visibility="visible";
     }
     else if(D==0){
         r = -b/(2*a);
-        result2.textContent=`Επειδή η διακρίνουσα είναι μηδέν, η εξίσωση έχει μία διπλή ρίζα, την ${r}`;
+        result2.textContent=`Η διακρίνουσα είναι μηδέν και επομένως η εξίσωση έχει μία διπλή ρίζα η οποία είναι η ρ=${r}`;
         result2.style.visibility="visible";
     }
 
