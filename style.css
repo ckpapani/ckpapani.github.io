@@ -3,6 +3,12 @@
 } */
 .dropdown-item{
     color: white;
+    opacity: 0.5;
+}
+
+
+.navbar-brand{
+    font-size: 2em;
 }
 
 #belowNavbar{
