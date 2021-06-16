@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathVideos.gr</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="quadraticEquation.css">
+    <script src="javaScript.js"></script>
+    <script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <script src="quadraticEquation.js" defer></script>  
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        
+</head>
+<body>
+    <div class="header">
+        <div class="brand">
+            mathVideos.gr
+        </div>
+    </div>
+
+    <div class="topnav">
+        <a href="index.html" class="active">
+            <div class="brand">
+                mathVideos.gr
+            </div>
+        </a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a href="videos.html">Videos</a>
+            <a href="interestsPages.html">Ενδιαφέρουσες σελίδες</a>
+            <a href="quadraticEquation.html">Τριώνυμο... μία εφαρμογή</a>
+            <a href="exams.html">Θέματα εξετάσεων</a>
+            <a href="whoAmI">Ποιος είμαι</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="side">
+        <div class="initial"><a href="index.html">Αρχική</a></div>
+        <div class="videos"><a href="videos.html">Videos</a></div>
+        <div class="interestsPages"><a href="interestsPages.html">Ενδιαφέρουσες σελίδες</a></div>
+        <div class="quadratic"><a href="quadraticEquation.html">Τριώνυμο... μία εφαρμογή</a></div>
+        <div class="exams"><a href="exams.html">Θέματα εξετάσεων</a></div>
+        <div class="whoAmI">Ποιος είμαι</div>
+    </div>
+
+    <div class="main">
+        <h1>Φόρμα επίλυσης δευτεροβάθμιας εξίσωσης</h1>
+        <h3>Εσείς απλώς συμπληρώνετε τους συντελεστές της εξίσωσης</h3>
+
+        <h3>\[αx^2 + βx + γ = 0\]</h3>
+
+        <div id="inputs" style="text-align: center;">
+            <input type="number" id="alpha" name="alpha" placeholder="α" style="background-color: #50543f;"> \(x^2\)+
+            <input type="number" id="beta" name="beta" placeholder="β"> \(x\)+
+            <input type="number" id="gamma" name="gamma" placeholder="γ"> = 0
+        </div>
+
+        <p>
+            Η διακρίνουσα ξεχωρίζει (διακρίνει) πόσες ακριβώς ρίζες έχει η εξίσωσή μας. Δηλαδή μας λέει αν έχει δύο, μία ή καμία ρίζα. Ο τύπος της είναι ο 
+            \[Δ = β^2 - 4 \cdot α \cdot γ\] όπου  \(α\), \(β\) και \(γ\) οι συντελεστές της παραπάνω εξίσωσης. 
+            <div id="printDiak"></div>
+        </p>
+
+          
+
+        <p>
+            Αν η διακρίνουσα είναι θετική ή μηδέν, τότε η εξίσωση έχει δύο ρίζες οι οποίες δίνονται από τους τύπους:
+            \[ρ_1 = \frac{-β + \sqrt{Δ}}{2\cdot α},\quad ρ_2 = \frac{-β - \sqrt{Δ}}{2\cdot α}\]
+            Ενώ στην περίπτωση που η διακρίνουσα είναι αρνητική, τότε η εξίσωση δεν έχει καμία ρίζα.
+            <div id="printRoots"></div>
+        </p>
+        
+        
+        
+    </div>
+
+    <div class="footer">@ Christoforos Papanikolaou </div>
+    
+</body>
+</html>
