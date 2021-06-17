@@ -1,6 +1,5 @@
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
-    background-color:rgb(129, 129, 129);
     color: white;
 }
 
@@ -12,11 +11,10 @@ a{
 
 .brand{
     color: orange;
-    text-shadow:5px 3px 4px gray;
+    text-shadow:3px 1px 2px wheat;
 }
 
 .main{
-    grid-area: main;
     text-align: left;
     background-color: #50543f;    
 }
@@ -50,18 +48,13 @@ p{
     
 }
 
-.footer{
-    margin-top: 5px;
-    grid-area: footer;
-    font-size: 0.6em;
-    text-align: center;
-    color: black;
-}
+
 
 @media (min-width: 850px) {
     body{
          padding: 10px 50px;   
          font-size: 18px;
+         background-color:rgb(129, 129, 129);
          display: grid;
          grid-template-areas: 
          'header header header header header'
@@ -121,10 +114,22 @@ p{
         color: orange;
     
     }
+
+    .footer{
+        margin-top: 5px;
+        grid-area: footer;
+        font-size: 0.6em;
+        text-align: center;
+        color: black;
+    }
 }
 
 
 @media (max-width: 849px ) {
+    h1{
+        margin-top: 6em;
+    }
+
     .side, .header{
         display: none;
     }
@@ -138,10 +143,9 @@ p{
     .topnav {
         overflow: hidden;
         background-color: #50543f;
-        position: -webkit-sticky; /* Safari */
-        position: sticky;
-        top: 0;
-        border: 1px solid white;
+        position: fixed;
+        margin-top: -10px;
+        width: 100%;
     }
 
         /* Hide the links inside the navigation menu (except for logo/home) */
@@ -166,7 +170,7 @@ p{
         color: white;
         display: block;
         position: absolute;
-        right: 10px;
+        right: 20px;
         top: 10px;
         font-size: 2em;
     }
@@ -177,9 +181,10 @@ p{
         color: orange;
     }
 
-    body{
-        padding: 5px 5px;   
+    body{   
         font-size: 14px;
+        background-color: #50543f;
+
     }
 
     li{
@@ -187,6 +192,14 @@ p{
     }
 
     .main{
-        padding: 10px;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .footer{
+        margin-top: 5px;
+        font-size: 0.6em;
+        text-align: center;
+        color: yellowgreen;
     }
 }
