@@ -15,7 +15,6 @@ a{
 }
 
 .main{
-    text-align: left;
     background-color: #50543f;    
 }
 
@@ -39,7 +38,7 @@ p{
     z-index: 0;
 }
 
-.video iframe{
+.video video iframe{
     position: absolute;
     top: 0;
     right: 0;
@@ -127,7 +126,7 @@ p{
 
 @media (max-width: 849px) {
     h1{
-        margin-top: 6em;
+        margin-top: 2em;
     }
 
     .side, .header{
