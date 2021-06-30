@@ -38,12 +38,13 @@ p{
     z-index: 0;
 }
 
-.video video iframe{
+video,.video iframe{
     position: absolute;
     top: 0;
     right: 0;
     width: 100%;
     height: 100%;
+    border: 1px solid black;
     
 }
 
@@ -103,9 +104,7 @@ p{
          margin-bottom: 30px;
      }
 
-     .topnav{
-         display: none;
-     }
+     
 
      a:hover{
         width: 100%;
@@ -123,82 +122,33 @@ p{
     }
 }
 
-
 @media (max-width: 849px) {
-    h1{
-        margin-top: 2em;
-    }
-
-    .side, .header{
+    .side{
+        display: none;
+    } 
+    
+    .header{
         display: none;
     }
 
-    .brand{
-        font-size: 2.5em;
-        text-align: left;
-        padding: 5px;
-    }
-
-    .topnav {
-        overflow: hidden;
-        background-color: #50543f;
-        position: fixed;
-        margin-top: -10px;
-        width: 100%;
-    }
-
-        /* Hide the links inside the navigation menu (except for logo/home) */
-    .topnav #myLinks {
-        display: none;
-        z-index: 100;
-    }
-
-        /* Style navigation menu links */
-    #myLinks a {
-        color: white;
-        font-size: 14px;
-        padding: 10px;
-        display: block;
-        z-index: 100;
-        
-    }
-
-        /* Style the hamburger menu */
-    .topnav a.icon {
-        background: #50543f;
-        color: white;
-        display: block;
-        position: absolute;
-        right: 20px;
-        top: 10px;
-        font-size: 2em;
-    }
-
-
-        /* Style the active link (or home/logo) */
-    .active {
-        color: orange;
-    }
-
-    body{   
-        font-size: 14px;
-        background-color: #50543f;
-
-    }
-
-    li{
-        margin-bottom: 20px;
+    body{
+        background-color: rgb(129, 129, 129);
+        padding: 10px 5px;
     }
 
     .main{
-        padding: 20px;
-        margin: 0;
+        border-radius: 10px;
+    }
+
+    h1, h2, h3, h4 , h5{
+        padding: 10px;
+    }
+
+    p{
+        padding: 0px 20px;
     }
 
     .footer{
-        margin-top: 5px;
-        font-size: 0.6em;
         text-align: center;
-        color: yellowgreen;
     }
 }
