@@ -120,6 +120,10 @@ video,.video iframe{
         text-align: center;
         color: black;
     }
+
+    .topnav{
+        display: none;
+    }
 }
 
 @media (max-width: 849px) {
@@ -131,9 +135,12 @@ video,.video iframe{
         display: none;
     }
 
+    .brand{
+        font-size: 3em;
+    }
+
     body{
         background-color: rgb(129, 129, 129);
-        padding: 10px 5px;
     }
 
     .main{
@@ -141,7 +148,7 @@ video,.video iframe{
     }
 
     h1, h2, h3, h4 , h5{
-        padding: 10px;
+        padding: 50px 20px 30px 20px;
     }
 
     p{
@@ -150,5 +157,38 @@ video,.video iframe{
 
     .footer{
         text-align: center;
+    }
+
+    /* Style the navigation menu */
+    .topnav {
+        overflow: hidden;
+        border-radius: 10px;
+        position: relative;
+        background:url("header.jpg");
+        background-size: cover;
+    }
+
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks {
+        display: none;
+        background-color: #333;
+    }
+
+    /* Style navigation menu links */
+    .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+    
+    /* Style the hamburger menu */
+    .topnav a.icon {
+        background: #333;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
 }
