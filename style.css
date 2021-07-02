@@ -27,6 +27,14 @@ h1, h2, h3{
 p{
     line-height: 30px;
 }
+
+ol,ul{
+    padding: 60px;
+}
+
+li{
+    margin-bottom: 20px;
+}
    
 
 .video{
@@ -136,7 +144,7 @@ video,.video iframe{
     }
 
     .brand{
-        font-size: 3em;
+        font-size: 2em;
     }
 
     body{
@@ -145,18 +153,20 @@ video,.video iframe{
 
     .main{
         border-radius: 10px;
+        border: 1px solid white;
+        margin-top: 5px;
     }
 
-    h1, h2, h3, h4 , h5{
-        padding: 50px 20px 30px 20px;
-    }
 
     p{
-        padding: 0px 20px;
+        padding: 20px;
+        line-height: 30px;
     }
 
     .footer{
         text-align: center;
+        margin-top: 10px;
+        color: #333;
     }
 
     /* Style the navigation menu */
@@ -186,9 +196,10 @@ video,.video iframe{
     /* Style the hamburger menu */
     .topnav a.icon {
         background: #333;
+        border-radius: 10px;
         display: block;
         position: absolute;
-        right: 0;
-        top: 0;
+        right: 10px;
+        top: 10px;
     }
 }
