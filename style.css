@@ -3,6 +3,36 @@ body{
     color: white;
 }
 
+.caption{
+    text-align: center;
+    margin-top: 5px;
+    font-size: small;
+    color: yellow;
+    
+}
+
+.accordion{
+    background-color:#50543f;
+    color: white;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.panel {
+    padding: 0 50px;
+    background-color: #50543f;
+    color: white;
+    font-size: 0.8em;
+    display: none;
+    overflow: hidden;
+  }
+
 a{
     text-decoration: none;
     color: white;
@@ -18,7 +48,7 @@ a{
     background-color: #50543f;    
 }
 
-h1, h2, h3{
+h1, h2, h3, h4{
     color:rgb(240, 198, 11)   ;
     text-align: center;
 }
@@ -51,9 +81,7 @@ video,.video iframe{
     top: 0;
     right: 0;
     width: 100%;
-    height: 100%;
-    border: 1px solid black;
-    
+    height: 100%;    
 }
 
 
@@ -145,6 +173,7 @@ video,.video iframe{
 
     .brand{
         font-size: 2em;
+        color: gold;
     }
 
     body{
@@ -166,7 +195,7 @@ video,.video iframe{
     .footer{
         text-align: center;
         margin-top: 10px;
-        color: #333;
+        color:yellow;
     }
 
     /* Style the navigation menu */
@@ -174,8 +203,8 @@ video,.video iframe{
         overflow: hidden;
         border-radius: 10px;
         position: relative;
-        background:url("header.jpg");
-        background-size: cover;
+        background-image:url("header.jpg");        background-size: cover;
+        width: 100%;
     }
 
     /* Hide the links inside the navigation menu (except for logo/home) */
