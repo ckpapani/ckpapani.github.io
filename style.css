@@ -1,6 +1,7 @@
 body{
     font-family: 'Comfortaa', cursive; 
     color: white;
+    margin: 0px;
 }
 
 .caption{
@@ -14,7 +15,8 @@ body{
 .accordion{
     background-color:#686d51;
     color: white;
-    font-size: inherit;
+    font-family: 'Comfortaa';
+    font-size: 0.8em;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -48,9 +50,13 @@ a{
     background-color: #50543f;    
 }
 
-h1, h2, h3, h4{
+h1, h2, h3, h4, h5{
     color:rgb(240, 198, 11)   ;
     text-align: center;
+}
+h6{
+    color:rgb(240, 198, 11)   ;
+    text-align: left; 
 }
 
 
@@ -173,18 +179,17 @@ video,.video iframe{
     }
 
     .brand{
-        font-size: 2em;
+        font-size: 1.4em;
         color: gold;
     }
 
     body{
-        background-color: rgb(129, 129, 129);
+        background-color: #50543f;
     }
 
     .main{
-        border-radius: 10px;
-        border: 1px solid white;
-        margin-top: 5px;
+        /* margin-top: 5px; */
+        width: 100%;
     }
 
 
@@ -202,7 +207,6 @@ video,.video iframe{
     /* Style the navigation menu */
     .topnav {
         overflow: hidden;
-        border-radius: 10px;
         position: relative;
         background-image:url("header.jpg");        
         background-size: cover;
@@ -231,6 +235,6 @@ video,.video iframe{
         display: block;
         position: absolute;
         right: 10px;
-        top: 10px;
+        top: 5px;
     }
 }
