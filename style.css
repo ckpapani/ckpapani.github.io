@@ -25,7 +25,7 @@ body{
 }
 
 .panel {
-    padding: 0 50px;
+    /* padding: 0 50px; */
     background-color: #50543f;
     color: white;
     font-size: 0.8em;
@@ -204,7 +204,8 @@ video,.video iframe{
         overflow: hidden;
         border-radius: 10px;
         position: relative;
-        background-image:url("header.jpg");        background-size: cover;
+        background-image:url("header.jpg");        
+        background-size: cover;
         width: 100%;
     }
 
