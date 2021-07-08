@@ -12,22 +12,36 @@ body{
     
 }
 
+.section{
+    padding: 10px;
+    margin: 10px;
+    background-color: #868d68;
+    border-radius: 10px;
+
+
+}
+
 .accordion{
     background-color:#686d51;
     color: white;
     font-family: 'Comfortaa';
     font-size: 0.8em;
     cursor: pointer;
-    padding: 18px;
+    padding: 20px;
     width: 100%;
     text-align: left;
     border: none;
     outline: none;
     transition: 0.4s;
+    position: relative;
+}
+
+i{
+    margin-right: 1em;
+    font-size: 1.5  em;
 }
 
 .panel {
-    /* padding: 0 50px; */
     background-color: #50543f;
     color: white;
     font-size: 0.8em;
@@ -43,7 +57,7 @@ a{
 
 .brand{
     color: orange;
-    text-shadow:3px 1px 2px wheat;
+    text-shadow:1px 1px 1px wheat;
 }
 
 .main{
@@ -53,6 +67,8 @@ a{
 h1, h2, h3, h4, h5{
     color:rgb(240, 198, 11)   ;
     text-align: center;
+    padding: 18px;
+    line-height: 30px;
 }
 h6{
     color:rgb(240, 198, 11)   ;
@@ -62,6 +78,7 @@ h6{
 
 p{
     line-height: 30px;
+    padding: 20px
 }
 
 ol,ul{
@@ -78,7 +95,7 @@ li{
     padding-bottom: 56.25%;
     height: 0;
     margin: auto;
-    width: 70%;
+    width: 90%;
     z-index: 0;
 }
 
@@ -192,14 +209,9 @@ video,.video iframe{
         width: 100%;
     }
 
-
-    p{
-        padding: 20px;
-        line-height: 30px;
-    }
-
     .footer{
         text-align: center;
+        font-size: x-small;
         margin-top: 10px;
         color:yellow;
     }
@@ -208,8 +220,9 @@ video,.video iframe{
     .topnav {
         overflow: hidden;
         position: relative;
-        background-image:url("header.jpg");        
-        background-size: cover;
+        background-color: #333;
+        /* background-image:url("header.jpg");        
+        background-size: cover; */
         width: 100%;
     }
 
