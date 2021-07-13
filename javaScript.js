@@ -1,27 +1,13 @@
-let acc = document.getElementsByClassName("accordion");
+for(let i = 0; i< modalBtn.length; i++){
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    for (j = 0; j < acc.length; j++) {
-      acc[j].nextElementSibling.style.display = "none";
-    }
-    
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
-    let panel = this.nextElementSibling;
-    /* Toggle between hiding and showing the active panel */
-    
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
+      modalBtn[i].addEventListener('click',function(){
+        modal[i].style.display = "block";
+        document.getElementsByClassName("close")[i].addEventListener("click",function(){
+          modal[i].style.display = "none";
+        });
+      });
 
-
-
+};
 
 
 
@@ -34,3 +20,4 @@ function myFunction() {
     x.style.display = "block";
   }
 }
+

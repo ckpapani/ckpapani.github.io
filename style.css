@@ -1,6 +1,6 @@
 body{
     font-family: 'Comfortaa', cursive; 
-    color: white;
+    color: #E9EAE7;
     margin: 0px;
 }
 
@@ -13,42 +13,59 @@ body{
 }
 
 .section{
-    padding: 10px;
-    margin: 10px;
-    background-color: #868d68;
+    background-color: #50543f;
     border-radius: 10px;
-
-
+    box-shadow: 0px 0px 20px black;
 }
 
-.accordion{
-    background-color:#686d51;
+.modalBtn{
+    background-color: #50543f;
+    width: 100%;
     color: white;
     font-family: 'Comfortaa';
-    font-size: 0.8em;
+    font-size: 16px;
     cursor: pointer;
     padding: 20px;
-    width: 100%;
     text-align: left;
     border: none;
-    outline: none;
-    transition: 0.4s;
-    position: relative;
 }
 
-i{
-    margin-right: 1em;
-    font-size: 1.5  em;
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
 }
 
-.panel {
+.modal-content {
     background-color: #50543f;
-    color: white;
-    font-size: 0.8em;
-    display: none;
-    overflow: hidden;
-  }
-
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 60%; /* Could be more or less, depending on screen size */
+    box-shadow: 0 0 10px lightcyan;
+}
+  
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 
 a{
@@ -59,18 +76,18 @@ a{
 
 .brand{
     color: orange;
-    text-shadow:1px 1px 1px wheat;
+    text-shadow:2px 3px 4px wheat;
 }
 
 .main{
-    background-color: #50543f;    
+    background-color: #7b8067;    
 }
 
 h1, h2, h3, h4, h5{
     color:rgb(240, 198, 11)   ;
     text-align: center;
     padding: 18px;
-    line-height: 30px;
+    line-height: 55px;
 }
 h6{
     color:rgb(240, 198, 11)   ;
@@ -80,16 +97,12 @@ h6{
 
 p{
     line-height: 30px;
-    padding: 20px
+    padding: 20px;
+    word-wrap: normal;
 }
 
-ol,ul{
-    padding: 60px;
-}
 
-li{
-    margin-bottom: 20px;
-}
+
    
 
 .video{
@@ -116,7 +129,7 @@ video,.video iframe{
     body{
          padding: 10px 50px;   
          font-size: 18px;
-         background-color:rgb(129, 129, 129);
+         background-color: rgba(0, 0, 0, 0.5)   ;
          display: grid;
          grid-template-areas: 
          'header header header header header'
@@ -133,8 +146,7 @@ video,.video iframe{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        background-image: linear-gradient(#50543f,lightgray);
-        background-color: #50543f;
+        background-image: linear-gradient(#50543f,#E9EAE7);
         border-radius: 20px;
     }
 
@@ -208,8 +220,13 @@ video,.video iframe{
     }
 
     .main{
-        /* margin-top: 5px; */
-        width: 100%;
+        margin: 5px auto;
+        width: 95%;
+        border-radius: 10px;
+    }
+
+    .modal-content{
+        width: 80%;
     }
 
     .footer{
