@@ -1,3 +1,7 @@
+*{
+    line-height: 30px;
+}
+
 body{
     font-family: 'Comfortaa', cursive; 
     color: #E9EAE7;
@@ -96,13 +100,20 @@ h6{
 
 
 p{
-    line-height: 30px;
+    
     padding: 20px;
 }
 
-ol, li{
-    line-height: 30px;
-    padding: 20px;
+
+
+ul{
+    list-style: none;
+}
+ul>li:before{
+    content: "\f144";
+    font-family: FontAwesome;
+    margin-left: -1.3em;
+    width: 1.3em;
 }
 
 .signature{
