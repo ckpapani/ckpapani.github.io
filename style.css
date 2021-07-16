@@ -100,6 +100,19 @@ p{
     padding: 20px;
 }
 
+ol, li{
+    line-height: 30px;
+    padding: 20px;
+}
+
+.signature{
+    background-color: #333;
+    border-radius: 10px;
+    font-size: small;
+    color: yellowgreen;
+    padding: 20px;
+}
+
 
 
    
@@ -133,7 +146,7 @@ video,.video iframe{
          grid-template-areas: 
          'header header header header header'
          'side main main main main'
-         'footer footer footer footer footer';
+         'signature signature signature signature signature';
          grid-gap: 20px;
     } 
 
@@ -176,6 +189,8 @@ video,.video iframe{
  
      li{
          margin-bottom: 30px;
+         line-height: 30px;
+         padding: 50px;
      }
 
      
@@ -187,12 +202,8 @@ video,.video iframe{
     
     }
 
-    .footer{
-        margin-top: 5px;
-        grid-area: footer;
-        font-size: 0.6em;
-        text-align: center;
-        color: black;
+    .signature{
+        grid-area: signature;
     }
 
     .topnav{
