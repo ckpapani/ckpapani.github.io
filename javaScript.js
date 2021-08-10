@@ -1,13 +1,13 @@
-for(let i = 0; i< modalBtn.length; i++){
+$( "#accordion" ).accordion({
+  collapsible: true
+});
 
-      modalBtn[i].addEventListener('click',function(){
-        modal[i].style.display = "block";
-        document.getElementsByClassName("close")[i].addEventListener("click",function(){
-          modal[i].style.display = "none";
-        });
-      });
+$( "#accordion2" ).accordion({
+  collapsible: true
+});
 
-};
+
+
 
 
 

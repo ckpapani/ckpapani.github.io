@@ -1,82 +1,23 @@
-*{
-    line-height: 30px;
-}
-
 body{
     font-family: 'Comfortaa', cursive; 
     color: #E9EAE7;
     margin: 0px;
 }
 
-.caption{
-    text-align: center;
-    margin-top: 5px;
-    font-size: small;
-    color: yellow;
-    
-}
 
 .section{
     background-color: #50543f;
     border-radius: 10px;
     box-shadow: 0px 0px 20px black;
+    margin: 40px;
+    padding: 40px;
 }
-
-.modalBtn{
-    background-color: #50543f;
-    width: 100%;
-    color: white;
-    font-family: 'Comfortaa';
-    font-size: 16px;
-    cursor: pointer;
-    padding: 20px;
-    text-align: left;
-    border: none;
-}
-
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
-}
-
-.modal-content {
-    background-color: #50543f;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    border-radius: 10px;
-    font-size: 14px;
-    width: 60%; /* Could be more or less, depending on screen size */
-    box-shadow: 0 0 10px lightcyan;
-}
-  
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-  
-.close:hover, .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
 
 a{
     text-decoration: none;
     color: white;
+    line-height: 30px;
 }
-
 
 .brand{
     color: orange;
@@ -87,12 +28,26 @@ a{
     background-color: #7b8067;    
 }
 
-h1, h2, h3, h4, h5{
-    color:rgb(240, 198, 11)   ;
+h1, h2, h4, h5, h6{
+    color:rgb(240, 198, 11);
     text-align: center;
-    padding: 18px;
-    line-height: 55px;
 }
+h3{
+    color:white;
+    font-size: 1em;
+    text-align: left; 
+    margin-left: 50px;
+}
+
+h3:before{
+    content: "\f144";
+    font-family: FontAwesome;
+}
+
+h3:hover{
+    cursor: pointer;
+}
+
 h6{
     color:rgb(240, 198, 11)   ;
     text-align: left; 
@@ -100,20 +55,13 @@ h6{
 
 
 p{
-    
+    line-height: 30px;
     padding: 20px;
 }
 
 
-
-ul{
-    list-style: none;
-}
-ul>li:before{
-    content: "\f144";
-    font-family: FontAwesome;
-    margin-left: -1.3em;
-    width: 1.3em;
+li{ 
+    padding: 10px;
 }
 
 .signature{
@@ -122,22 +70,20 @@ ul>li:before{
     font-size: small;
     color: yellowgreen;
     padding: 20px;
+    text-align: center;
 }
-
-
-
-   
 
 .video{
     position: relative;
     padding-bottom: 56.25%;
     height: 0;
     margin: auto;
-    width: 90%;
+    width: 80%;
     z-index: 0;
+    margin-top: 20px;   
 }
 
-video,.video iframe{
+iframe{
     position: absolute;
     top: 0;
     right: 0;
@@ -155,9 +101,9 @@ video,.video iframe{
          background-color: rgba(0, 0, 0, 0.5)   ;
          display: grid;
          grid-template-areas: 
-         'header header header header header'
-         'side main main main main'
-         'signature signature signature signature signature';
+         'header header '
+         'side main '
+         'signature signature ';
          grid-gap: 20px;
     } 
 
@@ -194,18 +140,10 @@ video,.video iframe{
      .brand{
         display: block;
         position: absolute;
-        bottom: -50px;
-        font-size: 6em;
+        bottom: -40px;
+        font-size: 5em;
     }
  
-     li{
-         margin-bottom: 30px;
-         line-height: 30px;
-         padding: 50px;
-     }
-
-     
-
      a:hover{
         width: 100%;
         font-size: 1.2em;
@@ -222,7 +160,7 @@ video,.video iframe{
     }
 }
 
-@media (max-width: 849px) {
+@media (max-width: 350px) {
     .side{
         display: none;
     } 
@@ -244,18 +182,10 @@ video,.video iframe{
         margin: 5px auto;
         width: 95%;
         border-radius: 10px;
+        padding: 5px;
     }
 
-    .modal-content{
-        width: 80%;
-    }
-
-    .footer{
-        text-align: center;
-        font-size: x-small;
-        margin-top: 10px;
-        color:yellow;
-    }
+    
 
     /* Style the navigation menu */
     .topnav {
@@ -291,4 +221,22 @@ video,.video iframe{
         right: 10px;
         top: 5px;
     }
+    
+    .section{
+        margin: 20px;
+        padding: 5px;
+    }
+
+    h1{
+        font-size: 1.5em;
+    }
+    h2{
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
+    h3{
+        margin: 1em;
+        line-height: 1.5em;
+    }
+    
 }

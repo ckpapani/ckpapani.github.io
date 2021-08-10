@@ -1,0 +1,43 @@
+body{
+    font-family: 'Comfortaa', cursive; 
+    color: #E9EAE7;
+    margin: 0px;
+}
+
+.brand{
+    color: orange;
+    text-shadow:2px 3px 4px wheat;
+    font-size: 1.4em;
+}
+
+.topnav {
+    overflow: hidden;
+    position: relative;
+    background-color: #333;
+    width: 100%;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: none;
+    background-color: #333;
+}
+
+/* Style navigation menu links */
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+    background: #333;
+    border-radius: 10px;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}

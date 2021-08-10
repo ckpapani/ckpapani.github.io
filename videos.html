@@ -5,7 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Videos</title>
-        <link rel="stylesheet" href="style.css">
+        
+        <!-- Style css --> <link rel="stylesheet" href="style.css">
+
         <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script> 
         <script defer src="javaScript.js" ></script>
         <script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
@@ -19,9 +21,15 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
         <script src="https://kit.fontawesome.com/4f7094dc46.js" crossorigin="anonymous"></script> 
         <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>   
+
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         
             
     </head>
+    
     <body>
         <div class="header">
             <div class="brand">
@@ -30,28 +38,24 @@
         </div>
 
         <!-- Navigation Bar for mobiles -->
-        
-        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
         <!-- Top Navigation Menu -->
         <div class="topnav">
             <a href="index.html" class="active">
                 <div class="brand">
-                    <i class="far fa-play-circle"></i> mathVideos.gr
+                    mathVideos.gr
                 </div>
             </a>
             <!-- Navigation links (hidden by default) -->
             <div id="myLinks">
-            <a href="videos.html">Videos</a>
-            <a href="interestsPages.html">Ενδιαφέρουσες σελίδες</a>
-            <a href="quadraticEquation.html">Τριώνυμο... μία εφαρμογή</a>
-            <a href="exams.html">Θέματα εξετάσεων</a>
-            <a href="whoAmI.html">Ποιος είμαι</a>
+                <a href="videos.html">Videos</a>
+                <a href="interestsPages.html">Ενδιαφέρουσες σελίδες</a>
+                <a href="quadraticEquation.html">Τριώνυμο... μία εφαρμογή</a>
+                <a href="exams.html">Θέματα εξετάσεων</a>
+                <a href="whoAmI.html">Ποιος είμαι</a>
             </div>
             <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
+                <i class="fa fa-bars"></i>
             </a>
         </div>
 
@@ -65,118 +69,64 @@
         </div>
 
         <div class="main">
-
-            <div class="section">
-                <h2 style="text-align: left;">Οι βασικοί κανόνες</h2>
-                
-                <ul>   
-                    <li>
-                        <button class="modalBtn" id="modalBtn">
-                        Οι πραγματικοί αριθμοί. Ποιοι είναι
-                        </button>
-                    </li>
-                    
-                    <div class="modal" id="modal">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <p>Ποιοι είναι οι πραγματικοί αριθμοί; Θα δούμε ότι οι αριθμοί που ξέρουμε και χρησιμοποιούμε στην καθημερινότητά μας χωρίζονται σε τέσσερις κατηγορίες, είναι οι φυσικοί αριθμοί, οι ακέραιοι, οι ρητοί και οι άρρητοι.</p> 
-                            <div class="video">
-                                <video width="560" height="315" controls>
-                                    <source src="Οι πραγματικοί αριθμοί.mp4" type="video/mp4">
-                                </video>
-                            </div>
+            <h1>Καλως ήρθατε στα videos του mathvideos.gr</h1>
             
-                            <p> 
-                                Άσκηση: <br>
-                                Βρείτε αν οι παρακάτω αριθμοί είναι φυσικοί, ακέραιοι, ρητοί, άρρητοι
-                                \[\sqrt{3},\;e,\; \pi,\; 0.6,\; 1.25,\; -4,\; \frac{2}{3}\]
-                            </p>
-                        </div>
-                    </div>
+            <div class="section">
+                <h2>Εισαγωγικά videos για άλγεβρα του σχολείου</h2>
+                <div id="accordion">
+                    <h3> Πρόσθεση</h3>
+                    <h3> Πολλαπλασιασμός</h3>
+                    <h3> Διαίρεση</h3>
+                </div>
+            </div>
+
+            <div class="section">  
+                <h2>Άλγεβρα Α' Λυκείου - Οι λύσεις των ασκήσεων του σχολικού βιβλίου</h2> 
                 
-
-                        
-                    <li>
-                        <button class="modalBtn" id="modalBtn">
-                            Πρόσθεση και αφαίρεση 
-                        </button>
-                    </li>
-                        
-                    <div class="modal" id="modal">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <p>Δείτε πώς γίνεται η πρόσθεση και η αφαίρεση δύο αριθμών που έχουν διαφορετικό πρόσημο ή δύο αριθμών με ίδιο πρόσημο.</p> 
-                            <div class="video">
-                                <video width="560" height="315" controls>
-                                    <source src="Πρόσθεση και αφαίρεση.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <p>
-                                Άσκηση<br>
-                                Δοκιμάστε να βρείτε τα παρακάτω αθροίσματα: <br>
-                                \(-5+7=  \qquad -7 + 13 = \) <br>
-                                \(-8-11= \qquad -9-23= \)
-                            </p>
+                <div id="accordion2">
+                    <h3> 2.1 - Οι πράξεις και οι ιδιότητές τους </h3>
+                    <div>
+                        <h4>Ασκήσεις Α' ομάδας:</h4>
+                        <div class="video">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/A7_aaTPFxbM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; ch3pboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
                         </div>
-                    </div>
-
-                    <li>
-                        <button class="modalBtn" id="modalBtn">
-                            Πολλαπλασιασμός
-                        </button>
-                    </li>
                     
-                    <div class="modal" id="modal">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <p>Δείτε πώς γίνεται ο πολλαπλασιασμός δύο αριθμών που έχουν διαφορετικό πρόσημο ή δύο αριθμών με ίδιο πρόσημο. </p>
-                            <div class="video">
-                                <video width="560" height="315" controls>
-                                    <source src="Πολλαπλασιασμός.mp4" type="video/mp4"> 
-                                </video>
-                            </div>
+                        <br><br>
+                        <h4>Ασκήσεις Β' ομάδας</h4>
+                        <div class="video">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/JlqnOXJEDe0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; ch3pboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <caption>Βίντεο 2</caption>
                         </div>
                     </div>
+                    <h3> 2.3 - Διάταξη πραγματικών αριθμών</h3>
+                    <div>
+                        <h4>Ασκήσεις Α' ομάδας</h4>
+                        <div class="video">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/zNDas4RVe8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; ch3pboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
 
-                    <li>
-                        <button class="modalBtn" id="modalBtn">
-                            Διαίρεση
-                        </button>
-                    </li> 
-                        
-                    
-                    <div class="modal" id="modal">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <p>Δείτε πώς γίνεται η διαίρεση δύο αριθμών που έχουν διαφορετικό πρόσημο ή δύο αριθμών με ίδιο πρόσημο.</p>
-                            <div class="video">
-                                <video width="560" height="315" controls>
-                                    <source src="Διαίρεση.mp4" type="video/mp4"> 
-                                </video>
-                            </div>
+                        <h4>Ασκήσεις Β' ομάδας</h4>
+                        <div class="video">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/yQtlJzF4fPA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; ch3pboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
-
-                    <li>
-                        <button class="modalBtn" id="modalBtn">
-                            Δυνάμεις αριθμών
-                        </button>
-                    </li>
-                        
-                    <div class="modal" id="modal">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <p>Τί ονομάζουμε δύναμη ενός αριθμού; Γιατί το λέμε έτσι; Με τί το μπερδεύουμε;</p> 
-                        </div>
-                    </div>
-                    
-                </ul>   
+                    <h3> 2.4 - Απόλυτη τιμή πραγματικού αριθμού</h3>
+                    <h3> 2.5 - Ρίζες πραγματικών αριθμών</h3>
+                    <h3> 3.1 - Εξισώσεις πρώτου βαθμού</h3>
+                    <h3> 3.2 - Η εξίσωση \(x^{\nu} = a\)</h3>
+                    <h3> 3.3 - Εξισώσεις δευτέρου βαθμού </h3>
+                    <h3> 4.1 - Ανισώσεις πρώτου βαθμού</h3>
+                    <h3> 4.2 - Ανισώσεις δευτέρου βαθμού</h3>
+                    <h3> 5.1 - Ακολουθίες </h3>
+                    <h3> 5.2 - Αριθμητική πρόοδος</h3>
+                    <h3> 5.3 - Γεωμετρική πρόοδος</h3>
+                    <h3> 6.1 - Η έννοια της συνάρτησης</h3>
+                    <h3> 6.2 - Γραφική παράσταση συνάρτησης</h3>
+                    <h3> 6.3 - Η συνάρτηση \(f(x) = ax + \beta\)</h3>               
+                </div>
             </div>
             
-            
-        </div>
-            
         <div class="signature">@ Christoforos Papanikolaou </div>   
-    
+
     </body>
     </html>
