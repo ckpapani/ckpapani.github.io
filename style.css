@@ -5,13 +5,7 @@ body{
 }
 
 
-.section{
-    background-color: #50543f;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px black;
-    margin: 40px;
-    padding: 40px;
-}
+
 
 a{
     text-decoration: none;
@@ -24,9 +18,7 @@ a{
     text-shadow:2px 3px 4px wheat;
 }
 
-.main{
-    background-color: #7b8067;    
-}
+
 
 h1, h2, h4, h5, h6{
     color:rgb(240, 198, 11);
@@ -109,6 +101,10 @@ iframe{
          grid-gap: 20px;
     } 
 
+    .main{
+        background-color: #7b8067;    
+    }
+
     .side{
         max-width: 300px;
         grid-area: side;
@@ -160,6 +156,13 @@ iframe{
     .topnav{
         display: none;
     }
+    .section{
+        background-color: #50543f;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px black;
+        margin: 40px;
+        padding: 40px;
+    }
 }
 
 @media (max-width: 849px) {
@@ -181,10 +184,8 @@ iframe{
     }
 
     .main{
-        margin: 5px auto;
-        width: 95%;
-        border-radius: 10px;
         padding: 5px;
+        background-color: #333;
     }
 
     
@@ -225,8 +226,9 @@ iframe{
     }
     
     .section{
-        margin: 20px;
+        margin: 10px 5px;
         padding: 5px;
+        background-color: #50543f;
     }
 
     h1{

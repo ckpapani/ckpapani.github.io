@@ -1,4 +1,4 @@
-$( "#accordion" ).accordion({
+$( "#accordion1" ).accordion({
   collapsible: true
 });
 
