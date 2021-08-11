@@ -1,6 +1,5 @@
 body{
-    /* font-family: 'Comfortaa', cursive; */ 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Comfortaa', cursive; 
     color: #E9EAE7;
     margin: 0px;
 }
@@ -32,12 +31,14 @@ a{
 h1, h2, h4, h5, h6{
     color:rgb(240, 198, 11);
     text-align: center;
+    font-weight: normal;
 }
 h3{
     color:white;
     font-size: 1em;
     text-align: left; 
     margin-left: 50px;
+    font-weight: normal;
 }
 
 h3:before{
