@@ -1,5 +1,6 @@
 body{
-    font-family: 'Comfortaa', cursive; 
+    /* font-family: 'Comfortaa', cursive; */ 
+    font-family: Arial, Helvetica, sans-serif;
     color: #E9EAE7;
     margin: 0px;
 }
