@@ -160,7 +160,7 @@ iframe{
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 849px) {
     .side{
         display: none;
     } 
