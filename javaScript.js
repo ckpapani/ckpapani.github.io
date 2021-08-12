@@ -1,9 +1,19 @@
 $( "#accordion1" ).accordion({
-  collapsible: true
+  collapsible: true,
+  active: false,
+  heightStyle: "content"
 });
 
 $( "#accordion2" ).accordion({
-  collapsible: true
+  collapsible: true,
+  active: false,
+  heightStyle: "content"
+});
+
+$( "#accordion3" ).accordion({
+  collapsible: true,
+  active: false,
+  heightStyle: "content"
 });
 
 
