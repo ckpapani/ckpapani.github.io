@@ -4,13 +4,22 @@ body{
     margin: 0px;
 }
 
-
+.socialMedia{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
 
 a{
     text-decoration: none;
     color: white;
     line-height: 30px;
+}
+
+a:hover{
+    cursor: pointer;
+    color: orange;
 }
 
 .brand{
@@ -142,12 +151,6 @@ iframe{
         font-size: 5em;
     }
  
-     a:hover{
-        width: 100%;
-        font-size: 1.2em;
-        color: orange;
-    
-    }
 
     .signature{
         grid-area: signature;
