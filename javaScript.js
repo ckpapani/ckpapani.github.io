@@ -1,24 +1,7 @@
-$(document).ready(function () {
-  $( "#accordion1" ).accordion({
-    collapsible: true,
-    active: false,
-    heightStyle: "content",
-    beforeActivate: onBeforeActivate
-  });
-  
-  $( "#accordion2" ).accordion({
-    collapsible: true,
-    active: false,
-    heightStyle: "content",
-    beforeActivate: onBeforeActivate
-  });
-  
-  $( "#accordion3" ).accordion({
-    collapsible: true,
-    active: false,
-    heightStyle: "content",
-    beforeActivate: onBeforeActivate
-  });
+$( "#accordion1" ).accordion({
+  collapsible: true,
+  active: false,
+  heightStyle: "content"
 });
 
 $( "#accordion2" ).accordion({
