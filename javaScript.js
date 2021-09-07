@@ -16,6 +16,11 @@ $( "#accordion3" ).accordion({
   heightStyle: "content"
 });
 
+$( "#accordion4" ).accordion({
+  collapsible: true,
+  active: false,
+  heightStyle: "content"
+});
 
  
 let v = document.getElementsByClassName("youtube-player"); 
