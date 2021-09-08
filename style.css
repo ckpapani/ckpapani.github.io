@@ -166,6 +166,16 @@ iframe{
         margin: 40px;
         padding: 40px;
     }
+
+    #myPhoto{
+        float:right;
+        width:200px; 
+        margin-top: 2em; 
+        margin-left: 2em; 
+        margin-right: 2em; 
+        box-shadow: 0px 0px 30px black; 
+        border-radius: 20px;"
+    }
 }
 
 @media (max-width: 849px) {
@@ -244,6 +254,16 @@ iframe{
     h3{
         margin: 1em;
         line-height: 1.5em;
+    }
+
+    #myPhoto{
+        float:right;
+        width:100px; 
+        margin-top: 2em; 
+        margin-left: 2em; 
+        margin-right: 2em; 
+        box-shadow: 0px 0px 30px black; 
+        border-radius: 20px;"
     }
     
 }
