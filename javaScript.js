@@ -5,7 +5,7 @@ $( ".accordion" ).accordion({
 });
 
 
-$(".icon").click(function(){
+$(".hamburger").click(function(){
   $("#myLinks").toggle(500);
 });
 

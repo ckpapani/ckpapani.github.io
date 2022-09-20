@@ -1,32 +1,11 @@
 @media (min-width: 850px) {
     
     body{
-        font-family: 'Comfortaa'; /* Οικογένεια γραμμάτων */
-        color: #E9EAE7; /* Χρώμα γραμματοσειράς */
-        margin: 0; /* Περιθώριο */
-        background-color: #333; /* Backgound */
+        font-family: 'Comfortaa'; 
+        color: #E9EAE7; 
+        margin: 0; 
+        background-color: #333; 
     }
-
-    .topbar{
-        background-color: rgb(97, 100, 91);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .name{
-        padding: 10px;
-        font-size: 11px;
-        text-align: center;
-        line-height: 1.5;
-    }
-
-    .socialMedia    {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
     
 
     .navbar{
@@ -37,64 +16,62 @@
         top: 0px;
     }
 
-
-    .hamburger{
-        display: none;
-    }
-
     
-    .navbar img{
-        height: 70px; 
-        border: 1px solid black; 
-        position:relative;              /* Το logo mathVideos */       
-        top: 5px; 
-        left: 5px;
-        bottom: 5px; 
+        .navbar img{
+            height: 70px; 
+            border: 1px solid black; 
+            position:relative;               
+            top: 5px; 
+            left: 5px;
+            bottom: 5px; 
 
-    }
+        }
+        
+        .navbar button{
+            background-color: #333;
+            border: none;
+            margin-left: 50px;
+            /* padding: 14px 16px; */
+            color: white;
+            font-size: 25px;
+            font-family: 'Comfortaa';
+        }
+    
+        .hamburger{
+            display: none;
+        }
+        
+        
+        .navbar button:hover{
+            cursor: pointer;            /* Πάνω από αυτά τα κουμπιά αλλάζει ο κέρσορας */
+        }
 
-    .navbar button{
-        background-color: #333;
-        border: none;
-        margin-left: 50px;
-        /* padding: 14px 16px; */       /* Γυμνάσιο Λύκειο Υλικό */
-        color: white;
-        font-size: 25px;
-        font-family: 'Comfortaa';
-    }
+        .navbar #myLinks{
+            display:inline-block;
+            position: relative;         /* Τα links κάτω από τα Γυμνάσιο Λύκειο Υλικό */
+            left: 25px;
+        }
 
-    .navbar button:hover{
-        cursor: pointer;            /* Πάνω από αυτά τα κουμπιά αλλάζει ο κέρσορας */
-    }
+            .dropdown{
+                display: inline-block;
+            }
 
+            .dropdown-content{
+                display: none;
+                position: absolute;
+                background-color: #50543f;
+                border-radius: 10px;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px black;
+                z-index: 1;
+            }
 
-
-    .navbar #myLinks{
-        display:inline-block;
-        position: relative;         /* Τα links κάτω από τα Γυμνάσιο Λύκειο Υλικό */
-        left: 25px;
-    }
-
-    .dropdown{
-        display: inline-block;
-    }
-
-    .dropdown-content{
-        display: none;
-        position: absolute;
-        background-color: #50543f;
-        border-radius: 10px;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px black;
-        z-index: 1;
-    }
-
-    .dropdown-content a{
-        color: yellow;
-        padding: 12px 16px;
-        display: block;
-        text-align: left;
-    }
+            .dropdown-content a{
+                color: yellow;
+                padding: 12px 16px;
+                display: block;
+                text-align: left;
+            }
 
     .main{
         margin: 50px 30px;
@@ -196,8 +173,4 @@
         margin: 40px;
         text-align: justify;
     }
-
-
-
-
 }

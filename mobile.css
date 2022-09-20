@@ -5,6 +5,8 @@
         margin: 10px 0px;
         background-color: #333;
     }
+
+    
     
     .navbar img{ 
         width: 50px; 
@@ -34,7 +36,7 @@
     
     .dropdown-content{
         display: none;
-        position: absolute;
+        position: relative;
         left: 50px;
         background-color: #50543f;
         border-radius: 5px;
@@ -57,12 +59,10 @@
         line-height: 30px;
     }
 
-    .icon {
-        background: #333;
+    .hamburger {
         font-size: 2em;
         color: white;
-        display: block;
-        position:absolute;
+        position: fixed;
         right: 20px;
         top: 16px;
     }
