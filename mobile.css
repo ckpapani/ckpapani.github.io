@@ -1,0 +1,148 @@
+@media (max-width: 849px) {
+    body{
+        font-family: 'Comfortaa'; 
+        color: white;
+        margin: 10px 0px;
+        background-color: #333;
+    }
+    
+    .navbar img{ 
+        width: 50px; 
+        position: relative;
+        left: 10px;  
+    }
+    
+    #myLinks{
+        display: none;
+    }
+    
+    #myLinks button{
+        font-size: 20px;
+        font-family: inherit;
+        background-color: #333;
+        color: white;
+        border: none;
+        margin: 20px;
+    }
+
+    ol{
+        margin: 25px;
+        line-height: 25px;
+    }
+
+    
+    
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        left: 50px;
+        background-color: #50543f;
+        border-radius: 5px;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px black;
+        z-index: 1;
+    }
+
+    .dropdown-content a{
+        color: white;
+        padding: 12px 16px;
+        display: block;
+        text-align: left;
+        text-decoration: none;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+        line-height: 30px;
+    }
+
+    .icon {
+        background: #333;
+        font-size: 2em;
+        color: white;
+        display: block;
+        position:absolute;
+        right: 20px;
+        top: 16px;
+    }
+    
+    p{
+        line-height: 25px;
+        padding: 40px;
+        text-align: justify;
+    }
+
+    h1{
+        color:gold;
+        text-align: center;
+        font-size: 40px;
+        line-height: 60px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 55px;
+        font-weight: normal; 
+    }
+
+    h2{
+        color: gold;
+        margin-top: 55px;
+        font-size: 30px;
+        line-height: 1.5em;
+        text-align: center;
+        font-weight: normal;
+    }
+    
+    h4{
+        color: gold;
+        margin-left: 20px;
+        margin-right: 20px;
+        line-height: 30px;
+        font-size: 20px;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    h3:before{
+        content: "\f144";
+        font-family: FontAwesome;
+    }
+
+    
+    .section{
+        margin: 15px 15px;
+        padding: 10px;
+        background-color: #50543f;
+    }
+    
+
+    
+    h3{
+        margin-left: 25px;
+        margin-right: 25px;
+        line-height: 25px;
+        font-size: medium;
+        text-align: center;
+        font-weight: normal;
+    }
+
+    h3 span{
+        color: gold;
+        display: inline-block;
+        font-size: smaller;
+        /* padding: 10px; */
+        /* border: 1px solid white; */
+    }
+
+    
+    #myPhoto{
+        float:right;
+        width:100px; 
+        margin-top: 2em; 
+        margin-left: 2em; 
+        margin-right: 2em; 
+        box-shadow: 0px 0px 30px black; 
+        border-radius: 20px;
+    }
+    
+}

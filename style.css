@@ -1,0 +1,203 @@
+@media (min-width: 850px) {
+    
+    body{
+        font-family: 'Comfortaa'; /* Οικογένεια γραμμάτων */
+        color: #E9EAE7; /* Χρώμα γραμματοσειράς */
+        margin: 0; /* Περιθώριο */
+        background-color: #333; /* Backgound */
+    }
+
+    .topbar{
+        background-color: rgb(97, 100, 91);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .name{
+        padding: 10px;
+        font-size: 11px;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .socialMedia    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+
+    .navbar{
+        display: flex;
+        background-color: #333;
+        align-items: center;
+        position: sticky;
+        top: 0px;
+    }
+
+
+    .hamburger{
+        display: none;
+    }
+
+    
+    .navbar img{
+        height: 70px; 
+        border: 1px solid black; 
+        position:relative;              /* Το logo mathVideos */       
+        top: 5px; 
+        left: 5px;
+        bottom: 5px; 
+
+    }
+
+    .navbar button{
+        background-color: #333;
+        border: none;
+        margin-left: 50px;
+        /* padding: 14px 16px; */       /* Γυμνάσιο Λύκειο Υλικό */
+        color: white;
+        font-size: 25px;
+        font-family: 'Comfortaa';
+    }
+
+    .navbar button:hover{
+        cursor: pointer;            /* Πάνω από αυτά τα κουμπιά αλλάζει ο κέρσορας */
+    }
+
+
+
+    .navbar #myLinks{
+        display:inline-block;
+        position: relative;         /* Τα links κάτω από τα Γυμνάσιο Λύκειο Υλικό */
+        left: 25px;
+    }
+
+    .dropdown{
+        display: inline-block;
+    }
+
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: #50543f;
+        border-radius: 10px;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px black;
+        z-index: 1;
+    }
+
+    .dropdown-content a{
+        color: yellow;
+        padding: 12px 16px;
+        display: block;
+        text-align: left;
+    }
+
+    .main{
+        margin: 50px 30px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .section{
+        display: block;
+        background-color: #50543f;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px black;
+        margin: 30px;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+        line-height: 30px;
+    }
+
+    a:hover{
+        cursor: pointer;
+    }
+
+    ol{
+        margin: 25px;
+        line-height: 25px;
+    }
+
+    h1{
+        color:gold;
+        text-align: center;
+        font-size: 3em;
+        line-height: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 55px;
+        font-weight: normal; 
+    }
+
+    h2{
+        color:gold;
+        text-align: center;
+        font-size: 2em;
+        line-height: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 55px;
+        font-weight: normal;
+    }
+
+    h3 {
+        color:white;
+        font-size: 17px;
+        text-align: left; 
+        margin: 25px;
+        line-height: 30px;
+        text-align: center;
+        font-weight: normal;
+    }
+    
+    h3 span{
+        color: gold;
+        display: inline-block;
+        font-size: smaller;
+    }
+    
+
+    h3:before{
+        content: "\f144";
+        font-family: FontAwesome;   
+    }
+
+    h3:hover{
+        cursor: pointer;
+    }
+
+
+    h4 {
+        color:gold;
+        text-align: center;
+        font-size: 1.5em;
+        line-height: 35px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-weight: normal;
+    }
+
+    h5{
+        color: white;
+        font-size: 1.3em;
+        padding-left: 30px;
+        font-weight: normal;
+    }
+
+    p{
+        line-height: 30px;
+        margin: 40px;
+        text-align: justify;
+    }
+
+
+
+
+}
