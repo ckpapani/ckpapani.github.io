@@ -16,13 +16,20 @@
     
     #myLinks{
         display: none;
+        position: fixed;
+        right: 70px;
+        background-color: #50543f;
+        border-radius: 10px;
+        min-width: 50px;
+        box-shadow: 0px 8px 16px 0px black;
+        z-index: 1;
     }
     
     #myLinks button{
         font-size: 20px;
         font-family: inherit;
-        background-color: #333;
-        color: white;
+        background-color: #50543f;
+        color: gold;
         border: none;
         margin: 20px;
     }
