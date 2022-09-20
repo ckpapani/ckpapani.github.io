@@ -41,17 +41,6 @@
 
     
     
-    .dropdown-content{
-        display: none;
-        position: relative;
-        left: 50px;
-        background-color: #50543f;
-        border-radius: 5px;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px black;
-        z-index: 1;
-    }
-
     .dropdown-content a{
         color: white;
         padding: 12px 16px;
