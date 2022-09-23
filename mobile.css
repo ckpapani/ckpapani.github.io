@@ -72,8 +72,8 @@
     h1{
         color:gold;
         text-align: center;
-        font-size: 40px;
-        line-height: 60px;
+        font-size: 6vw;
+        line-height: 50px;
         margin-left: 20px;
         margin-right: 20px;
         margin-top: 55px;
@@ -83,9 +83,9 @@
     h2{
         color: gold;
         margin-top: 55px;
-        font-size: 30px;
-        line-height: 1.5em;
         text-align: center;
+        font-size: 5vw;
+        line-height: 1.5em;
         font-weight: normal;
     }
     
@@ -108,7 +108,7 @@
         text-shadow: 10px 10px 20px black; 
         color: white; 
         text-align: left; 
-        padding: 0 50px;
+        padding: 0 20px;
     }
     ul.schoolDiary{
         padding: 0 10%;
