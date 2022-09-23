@@ -104,6 +104,15 @@
         font-family: FontAwesome;
     }
 
+    h2.schoolDiary{
+        text-shadow: 10px 10px 20px black; 
+        color: white; 
+        text-align: left; 
+        padding: 0 50px;
+    }
+    ul.schoolDiary{
+        padding: 0 10%;
+    }
     
     .section{
         margin: 15px 15px;
