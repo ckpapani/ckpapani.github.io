@@ -76,7 +76,6 @@
 
     .main{
         margin: 50px 30px;
-        display: flex;
         display: grid;
         grid-template-columns: 50% 50%;
     }
@@ -91,7 +90,7 @@
 
     a{
         text-decoration: none;
-        color: white;
+        color: yellow;
         line-height: 30px;
     }
 
@@ -132,13 +131,23 @@
         font-weight: normal;
     }
 
+    h2.schoolDiary{
+        text-shadow: 10px 10px 20px black; 
+        color: white; 
+        text-align: left; 
+        padding: 0 50px;
+    }
+    ul.schoolDiary{
+        padding: 0 10%;
+    }
+
+
     h3 {
         color:white;
         font-size: 17px;
         text-align: left; 
-        margin: 25px;
+        padding: 0 50px;
         line-height: 30px;
-        text-align: center;
         font-weight: normal;
     }
     
