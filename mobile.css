@@ -106,13 +106,17 @@
     }
 
     h2.schoolDiary{
-        text-shadow: 10px 10px 20px black; 
+        text-shadow: 10px 10px 20px black;
+        font-size: 4vw;
         color: white; 
         text-align: left; 
         padding: 0 20px;
     }
     ul.schoolDiary{
         padding: 0 10%;
+    }
+    li{
+        font-size: 3vw;
     }
     
     .section{
@@ -130,6 +134,7 @@
         font-size: medium;
         text-align: center;
         font-weight: normal;
+        font-size: 3vw;
     }
 
     h3 span{
