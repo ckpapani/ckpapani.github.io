@@ -11,7 +11,8 @@
     .navbar img{ 
         width: 50px; 
         position: relative;
-        left: 10px;  
+        left: 10px; 
+        box-shadow: 0 0 10px black; 
     }
     
     #myLinks{
@@ -25,11 +26,11 @@
         z-index: 1;
     }
     
-    #myLinks button{
+    #myLinks div{
         font-size: 20px;
         font-family: inherit;
         background-color: #50543f;
-        color: gold;
+        color: white;
         border: none;
         margin: 20px;
     }
@@ -100,7 +101,7 @@
     }
 
     h3:before{
-        content: "\f144";
+        content: "\f144 ";
         font-family: FontAwesome;
     }
 
