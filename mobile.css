@@ -55,7 +55,7 @@
         text-decoration: none;
         color: white;
         line-height: 30px;
-        font-size: 4.5vw;
+        font-size: 4vw;
     }
 
     .hamburger {
@@ -117,8 +117,10 @@
     ul.schoolDiary{
         padding: 0 10%;
     }
+
     li{
         font-size: 3.5vw;
+        line-height: 50px;
     }
     
     .section{
