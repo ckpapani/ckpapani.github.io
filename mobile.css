@@ -1,10 +1,10 @@
-@media (max-width: 849px) {
+@media (max-width: 479px) {
     body{
         font-family: 'Comfortaa'; 
         color: white;
         margin: 10px 0px;
         background-color: #333;
-        font-size: 3.5vw;
+        font-size: 10pt;
     }
 
     
@@ -19,7 +19,7 @@
     #myLinks{
         display: none;
         position: fixed;
-        right: 70px;
+        right: 20px;
         background-color: #50543f;
         border-radius: 10px;
         min-width: 50px;
@@ -28,11 +28,6 @@
     }
     
     #myLinks div{
-        font-size: 20px;
-        font-family: inherit;
-        background-color: #50543f;
-        color: white;
-        border: none;
         margin: 20px 15px;
     }
 
@@ -54,8 +49,6 @@
     a{
         text-decoration: none;
         color: white;
-        line-height: 30px;
-        font-size: 4vw;
     }
 
     .hamburger {
@@ -66,30 +59,20 @@
         top: 16px;
     }
     
-    p{
-        line-height: 25px;
-        padding: 10px;
-        text-align: justify;
-    }
 
     h1{
         color:gold;
         text-align: center;
-        font-size: 6vw;
-        line-height: 50px;
-        margin-left: 20px;
-        margin-right: 20px;
         margin-top: 55px;
-        font-weight: normal; 
+        font-size: 14pt;
     }
 
     h2{
         color: gold;
         margin-top: 55px;
         text-align: center;
-        font-size: 5vw;
         line-height: 1.5em;
-        font-weight: normal;
+        font-size: 12pt;
     }
     
     h4{
@@ -97,7 +80,6 @@
         margin-left: 20px;
         margin-right: 20px;
         line-height: 30px;
-        font-size: 20px;
         font-weight: normal;
         text-align: center;
     }
@@ -108,8 +90,7 @@
     }
 
     h2.schoolDiary{
-        text-shadow: 10px 10px 20px black;
-        font-size: 4vw;
+        text-shadow: 0 0 20px black;
         color: white; 
         text-align: left; 
         padding: 0 20px;
@@ -119,21 +100,21 @@
     }
 
     li{
-        font-size: 3.5vw;
-        line-height: 50px;
+        margin-top: 30pt;
+        margin-bottom: 30pt;
+        line-height: 20pt;
     }
     
     .section{
-        margin: 15px 15px;
-        padding: 10px;
+        margin: 10px;
+        padding: 1px;
         background-color: #50543f;
     }
     
     p{
-        line-height: 30px;
-        margin: 10px;
+        line-height: 23px;
+        margin: 8px;
         text-align: justify;
-        font-size: 3.5vw;
     }
 
     
@@ -143,7 +124,7 @@
         line-height: 25px;
         text-align: center;
         font-weight: normal;
-        font-size: 3.5vw;
+        font-size: 10pt;
     }
 
     h3 span{

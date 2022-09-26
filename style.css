@@ -1,4 +1,4 @@
-@media (min-width: 850px) {
+@media (min-width: 768px) {
 
     body {
         font-family: 'Comfortaa';
@@ -83,11 +83,11 @@
         margin: 30px;
     }
 
-    a {
+    /* a {
         text-decoration: none;
         color: yellow;
         line-height: 30px;
-    }
+    } */
 
     a:hover {
         cursor: pointer;
