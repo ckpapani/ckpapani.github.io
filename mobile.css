@@ -111,6 +111,9 @@
         text-align: justify;
     }
 
+    p.schoolDiary{
+        font-size: 8pt;
+    }
     
     h3{
         margin-left: 25px;
@@ -129,5 +132,7 @@
         /* border: 1px solid white; */
     }
 
-    
+    .schoolDiary a{
+        color: gold;
+    }    
 }

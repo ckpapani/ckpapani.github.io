@@ -121,7 +121,7 @@
 
     h2.schoolDiary {
         text-shadow: 10px 10px 20px black;
-        color: white;
+        color: gold;
         text-align: left;
         padding: 0 50px;
     }
@@ -175,5 +175,16 @@
         line-height: 30px;
         margin: 40px;
         text-align: justify;
+    }
+
+    p.schoolDiary{
+        font-size: 10pt;
+        padding: 20px;
+        margin: 0;
+
+    }
+    .schoolDiary a{
+        color: gold;
+        font-size: inherit;
     }
 }
