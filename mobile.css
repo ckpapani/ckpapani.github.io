@@ -64,20 +64,17 @@
         text-shadow: 0 0 20px black;
         color:gold;
         text-align: center;
-        margin-top: 55px;
         font-size: 14pt;
     }
 
     h2{
         color: gold;
-        margin-top: 55px;
         text-align: center;
         line-height: 1.5em;
         font-size: 12pt;
     }
     
     h4{
-        color: gold;
         margin-left: 20px;
         margin-right: 20px;
         line-height: 30px;
@@ -91,7 +88,6 @@
     }
 
     h2.schoolDiary{
-        color: gold; 
         text-align: left; 
         padding: 0 20px;
     }
@@ -100,8 +96,6 @@
     }
 
     li{
-        margin-top: 30pt;
-        margin-bottom: 30pt;
         line-height: 25px;
     }
     

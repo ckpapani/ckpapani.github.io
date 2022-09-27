@@ -70,7 +70,6 @@
     .main {
         margin: 50px 30px;
         display: grid;
-        grid-template-columns: 50% 50%;
     }
 
     .section {
@@ -117,7 +116,6 @@
         line-height: 50px;
         margin-left: 20px;
         margin-right: 20px;
-        margin-top: 55px;
         font-weight: normal;
     }
 
@@ -160,7 +158,6 @@
 
 
     h4 {
-        color: gold;
         text-align: center;
         line-height: 35px;
         padding-left: 30px;
