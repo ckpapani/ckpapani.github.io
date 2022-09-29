@@ -48,6 +48,16 @@
         right: 20px;
         top: 16px;
     }
+
+    p{
+       padding: 10px; 
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
     
 
     h1 {

@@ -87,6 +87,13 @@
         font-size: 12pt;
     }
 
+    p{
+        font-size: 12pt;
+        padding: 20px;
+        margin: 0; 
+        line-height: 1.5em; 
+    }
+
     a:hover {
         cursor: pointer;
     }
