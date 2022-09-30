@@ -109,6 +109,13 @@
 
     li.schoolDiary{
         line-height: 20px;
+        border: 1px solid darkgoldenrod;
+        padding: 10px;
+        background-color: maroon;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px black;
+        text-align: center;
+        list-style-type: none;
     }
     
     h3{

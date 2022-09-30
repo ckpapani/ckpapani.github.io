@@ -103,8 +103,15 @@
         line-height: 25px;
     }
 
-    li {
-        margin-top: 20px;
+    li.schoolDiary {
+        width: 80%;
+        text-align: center;
+        background-color: maroon;
+        border: 1px solid darkgoldenrod;
+        box-shadow: 0 10px 10px black;
+        border-radius: 10px;
+        padding: 10px;
+        list-style-type: none;
     }
 
     h1 {
