@@ -99,7 +99,7 @@
         text-shadow: 10px 10px 20px black;
     }
     ul.schoolDiary{
-        padding: 0 10%;
+        padding: 0 5%;
     }
     
     .section{
@@ -111,6 +111,7 @@
     
     p.schoolDiary{
         font-size: 8pt;
+        margin-top: 20px;
     }
 
     li.schoolDiary{
