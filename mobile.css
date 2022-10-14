@@ -63,6 +63,19 @@
         color: white;
     }
 
+    ul.schoolMenu{
+        margin: 0 auto;
+        text-align: center;
+    }
+    li.schoolMenu{
+        display: inline-block;
+        vertical-align: top;
+        background-color: maroon;
+        border-radius: 10px;
+        border: 1px solid gold;
+        padding: 10px;
+        margin: 10px;
+    }
     
 
     h1 {
