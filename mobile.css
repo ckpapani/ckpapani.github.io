@@ -8,7 +8,11 @@
         line-height: 1.8em;
     }
 
-    
+    .nested{
+        margin: 0;
+        font-size: 10pt;
+        width: 80%;
+    }
     
     .navbar img{ 
         width: 50px; 
