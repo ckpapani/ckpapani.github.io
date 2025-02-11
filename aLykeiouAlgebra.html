@@ -1,345 +1,357 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="og:image" content="mathvideosthumb.png" />
-        <title>Α'Λυκείου Άλγεβρα</title>
-        
-        <!-- My Style css --> <link rel="stylesheet" href="style.css">
-        <!-- Mobile Style css --> <link rel="stylesheet" href="mobile.css">
-        <!-- My JavaScript load --><script defer src="javaScript.js" ></script>
-        <!-- LaTeX Equations -->
-            <script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-            </script>
-        <!-- Fonts load -->
-            <link rel="preconnect" href="https://fonts.googleapis.com"> 
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-            <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
-            <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-            rel="stylesheet">
-        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-            <script src="https://kit.fontawesome.com/4f7094dc46.js" crossorigin="anonymous"></script>     
-        <!-- Accordion -->
-            <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="mathvideosthumb.png" />
+    <title>mathVideos.gr</title>
     
+    <!-- My Style css --> <link rel="stylesheet" href="style.css">
+    <!-- Mobile Style css --> <link rel="stylesheet" href="mobile.css">
+    <!-- My JavaScript load --><script defer src="javaScript.js" ></script>
+    <!-- LaTeX Equations -->
+        <script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
+    <!-- Fonts load -->
+        <!--Fonts CMU Serif-->
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/cmu-serif" type="text/css"/>
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet"> -->
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <script src="https://kit.fontawesome.com/4f7094dc46.js" crossorigin="anonymous"></script>     
+    <!-- Accordion -->
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
 
-    <body>
 
-        <div class="navbar">
-        
-            <a href="index.html"><img src="images/mathVideos.jpg"></a>
+<body>
+
+    <div class="navbar">
     
-            <!-- Navigation links (hidden by default) -->
-            <div id="myLinks">
-                <div class="dropdownMenu"> 
-                    <div id="junior">Γυμνάσιο</div>
-                    
-                    <div class="dropdown-content" id="juniorIndex">
-                        <a href="aGymnasiou.html">A' Γυμνασίου</a>
-                        <a href="bGymnasiou.html">Β' Γυμνασίου</a>
-                        <a href="gGymnasiou.html">Γ' Γυμνασίου</a>
-                    </div>
-                </div>
-                
-                <div class="dropdownMenu">
-                    <div id="high">Λύκειο</div>
-                        
-                    <div class="dropdown-content" id="highIndex">
-                            <a href="aLykeiou.html">A' Λυκείου</a>
-                            <a href="bLykeiou.html">Β' Λυκείου</a>
-                            <a href="gLykeiou.html">Γ' Λυκείου</a>
-                        </div>
-                </div>
-                
-                <div class="dropdownMenu">
-                    <div id="material">Υλικό</div>
-                        
-                    <div class="dropdown-content" id="materialIndex">
-                            <a href="panellinies.html">Θέματα Πανελληνίων</a>
-                    </div>
-                </div>
+        <a href="index.html"><img src="images/mathVideos.jpg"></a>
 
-
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <div class="dropdownMenu"> 
+                <div id="junior">Γυμνάσιο</div>
+                
+                <div class="dropdown-content" id="juniorIndex">
+                    <a href="aGymnasiou.html">A' Γυμνασίου</a>
+                    <a href="bGymnasiou.html">Β' Γυμνασίου</a>
+                    <a href="gGymnasiou.html">Γ' Γυμνασίου</a>
                 </div>
             </div>
-    
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a class="hamburger">
-                <i class="fa fa-bars"></i>
-            </a>
-    
-        </div>
         
-        
-        <h1>Άλγεβρα Α' Λυκείου</h1>
-        <h2>Λύσεις ασκήσεων του σχολικού βιβλίου</h2>
-        <div class="accordion">
-            <h3> 2.1 - Οι πράξεις και οι ιδιότητές τους </h3>
-            <div>
-                <h4>Ασκήσεις Α' ομάδας:</h4>
-                <div class="youtube-player" data-id="A7_aaTPFxbM" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                    <img src="http://i3.ytimg.com/vi/A7_aaTPFxbM/0.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+            <div class="dropdownMenu">
+                <div id="high">Λύκειο</div>
                     
-                    <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                    </div> 
-                </div>
-                
+                <div class="dropdown-content" id="highIndex">
+                        <a href="aLykeiou.html">A' Λυκείου</a>
+                        <a href="bLykeiou.html">Β' Λυκείου</a>
+                        <a href="gLykeiou.html">Γ' Λυκείου</a>
+                    </div>
+            </div>
             
-                <br><br>
-                <h4>Ασκήσεις Β' ομάδας</h4>
-                <div class="youtube-player" data-id="JlqnOXJEDe0" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                    <img src="https://img.youtube.com/vi/JlqnOXJEDe0/0.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+            <div class="dropdownMenu">
+                <div id="material">Υλικό</div>
                     
-                    <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                    </div> 
+                <div class="dropdown-content" id="materialIndex">
+                        <a href="https://apps1.minedu.gov.gr/efarmoges/themata.php">Θέματα Πανελληνίων</a>
+                        <a href="https://trapeza-thematon.gr">Τράπεζα Θεμάτων Μεθοδικό</a>
                 </div>
-                
             </div>
-            <h3> 2.3 - Διάταξη πραγματικών αριθμών</h3>
-            <div>
-                <h4>Ασκήσεις Α' ομάδας</h4>
-                <div class="youtube-player" data-id="zNDas4RVe8s" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                    <img src="https://img.youtube.com/vi/zNDas4RVe8s/0.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                    
-                    <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                    </div> 
-                </div>
-                
+        </div>
+    
 
-                <h4>Ασκήσεις Β' ομάδας</h4>
-                <div class="youtube-player" data-id="yQtlJzF4fPA" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                    <img src="https://img.youtube.com/vi/yQtlJzF4fPA/0.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                    
-                    <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                    </div> 
-                </div>
-                
-            </div>
-            <h3> 2.4 - Απόλυτη τιμή πραγματικού αριθμού</h3>
-            <div>
-                <h4>Ασκήσεις Α' ομάδας</h4>
-                <div class="youtube-player" data-id="fHn1B2FUoKM" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                    <img src="https://img.youtube.com/vi/fHn1B2FUoKM/0.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                    
-                    <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                    </div> 
-                </div>
-                
-                <h4>Ασκήσεις Β' ομάδας</h4>
-                <div class="youtube-player" data-id="ABU6WB5su9U" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                    <img src="https://img.youtube.com/vi/ABU6WB5su9U/0.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                    
-                    <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                    </div> 
-                </div>
-                
-            </div>
-            <h3> 2.5 - Ρίζες πραγματικών αριθμών</h3>
-            <div>
-                <h4>Ασκήσεις Α' ομάδας</h4>
-                <div class="youtube-player" data-id="qEvxrcugLcQ" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                    <img src="https://img.youtube.com/vi/qEvxrcugLcQ/0.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                    
-                    <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                    </div> 
-                </div>
-                
-                <h4>Ασκήσεις Β' ομάδας</h4>
-                <div class="youtube-player" data-id="D-EX-UkWwQ0" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                    <img src="https://img.youtube.com/vi/D-EX-UkWwQ0/0.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                    
-                    <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                    </div> 
-                </div>
-            </div>
-            <h3> 3.1 - Εξισώσεις πρώτου βαθμού</h3>
-            <div>
-                <h4>Ασκήσεις Α' ομάδας</h4>
-                <div class="youtube-player" data-id="C1-6VF555_k" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                    <img src="https://img.youtube.com/vi/C1-6VF555_k/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                    
-                    <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                    </div> 
-                </div>
-                
-                <h4>Ασκήσεις Β' ομάδας</h4>
-                <div class="youtube-player" data-id="XfS28VsWIjI" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                    <img src="https://img.youtube.com/vi/XfS28VsWIjI/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                    
-                    <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                    </div> 
-                </div>
-                
-            </div>
-            <h3> 3.2 - Η εξίσωση \(x^{\nu} = a\)</h3>
-            <div>
-                <h4>Ασκήσεις Α' ομάδας</h4>
-                <div class="youtube-player" data-id="cexJ-JNEwbo" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                    <img src="https://img.youtube.com/vi/cexJ-JNEwbo/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                    
-                    <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                    </div> 
-                </div>
-                
-            </div>
-            <h3> 3.3 - Εξισώσεις δευτέρου βαθμού </h3>
-            <div>
-                <h4>Ασκήσεις Α' ομάδας</h4>
-                <div class="youtube-player" data-id="XCZhRvK4Tmo" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                    <img src="https://img.youtube.com/vi/XCZhRvK4Tmo/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                    
-                    <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                    </div> 
-                </div>
-                
-                <h4>Ασκήσεις Β' ομάδας</h4>
-                <div class="youtube-player" data-id="Jln4KV7Uy30" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                    <img src="https://img.youtube.com/vi/Jln4KV7Uy30/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                    
-                    <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                    </div> 
-                </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a class="hamburger">
+            <i class="fa fa-bars"></i>
+        </a>
 
+    </div>
+    
+    
+    <div>
+        <img src="images/bannerMathVideosNew (1).png" alt="bannerMathVideos" style="width: 100%">
+    </div>
+
+    <h1 class="welcome">Καλωσήρθες στην Άλγεβρα της Α' Λυκείου</h1>
+    <div class="video-grid">
+        <div class="video-item">
+            <div class="youtube-player" data-id="A7_aaTPFxbM" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/A7_aaTPFxbM/0.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                2.1 Οι πράξεις και οι ιδιότητές τους (Ασκήσεις Α' ομάδας)
             </div>
-            <h3> 4.1 - Ανισώσεις πρώτου βαθμού</h3>
-            <div>
-                <h4>Ασκήσεις Α' ομάδας</h4>
-                <div class="youtube-player" data-id="2tfWnjaJHAU" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                    <img src="https://img.youtube.com/vi/2tfWnjaJHAU/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                    
-                    <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                    </div> 
-                </div>
-                
-                <h4>Ασκήσεις Β' ομάδας</h4>
-                <div class="youtube-player" data-id="MuEP-AaV1_A" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                    <img src="https://img.youtube.com/vi/MuEP-AaV1_A/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                    
-                    <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                    </div> 
-                </div>
-                
+        </div>
+        
+        <div class="video-item">
+            <div class="youtube-player" data-id="JlqnOXJEDe0" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/JlqnOXJEDe0/0.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                2.1 Οι πράξεις και οι ιδιότητές τους (Ασκήσεις Β' ομάδας)
             </div>
-            <h3> 4.2 - Ανισώσεις δευτέρου βαθμού</h3>
-            <div>
-                <h4>Ασκήσεις Α' ομάδας</h4>
-                <div class="youtube-player" data-id="vjzq7AiDELM" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                    <img src="https://img.youtube.com/vi/vjzq7AiDELM/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                    
-                    <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                    </div> 
-                </div>
-                
-                <h4>Ασκήσεις Β' ομάδας</h4>
-                <div class="youtube-player" data-id="YKDueuIHXGQ" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                    <img src="https://img.youtube.com/vi/YKDueuIHXGQ/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                    
-                    <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                    </div> 
-                </div>
-                
-            </div>
-            <h3> 5.1 - Ακολουθίες </h3>
-            <div>
-                <h4>Ασκήσεις Α' ομάδας</h4>
-                <div class="youtube-player" data-id="MTVrFXLSMAM" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                    <img src="https://img.youtube.com/vi/MTVrFXLSMAM/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                    
-                    <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                    </div> 
-                </div>
-                
-            </div>
-            <h3> 5.2 - Αριθμητική πρόοδος</h3>
-            <div>
-                <h4>Ασκήσεις Α' ομάδας</h4>
-                <div class="youtube-player" data-id="7lyENGGXVsk" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                    <img src="https://img.youtube.com/vi/7lyENGGXVsk/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                    
-                    <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                    </div> 
-                </div>
-                
-                <h4>Ασκήσεις Β' ομάδας</h4>
-                <div class="youtube-player" data-id="mXmuPjV-xdM" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                    <img src="https://img.youtube.com/vi/mXmuPjV-xdM/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                    
-                    <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                    </div> 
-                </div>
-                
-            </div>
-            <h3> 5.3 - Γεωμετρική πρόοδος</h3>
-            <div>
-                <h4>Ασκήσεις Α' ομάδας</h4>
-                <div class="youtube-player" data-id="z-HDNq9bCcY" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                    <img src="https://img.youtube.com/vi/z-HDNq9bCcY/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                    
-                    <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                    </div> 
-                </div>
-                
-                <h4>Ασκήσεις Β' ομάδας</h4>
-                <div class="youtube-player" data-id="UL7OYDqAdYk" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                    <img src="https://img.youtube.com/vi/UL7OYDqAdYk/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                    
-                    <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                    </div> 
-                </div>
-                
-            </div>
-            <h3> 6.1 - Η έννοια της συνάρτησης</h3>
-            <div>
-                <h4>Ασκήσεις Α' ομάδας</h4>
-                <div class="youtube-player" data-id="jc0uCip-38U" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                    <img src="https://img.youtube.com/vi/jc0uCip-38U/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                    
-                    <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                    </div> 
-                </div>
-                
-            </div>
-            <h3> 6.2 - Γραφική παράσταση συνάρτησης</h3>
-            <div>
-                <h4>Ασκήσεις Α' ομάδας</h4>
-                <div class="youtube-player" data-id="8NjURvwdRsw" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                    <img src="https://img.youtube.com/vi/8NjURvwdRsw/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                    
-                    <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                    </div> 
-                </div>
-                
-            </div>
-            <h3> 6.3 - Η συνάρτηση \(f(x) = ax + \beta\)</h3>
-            <div>
-                <h4>Ασκήσεις Α' ομάδας</h4>
-                <div class="youtube-player" data-id="RM8ezvPzejY" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                    <img src="https://img.youtube.com/vi/RM8ezvPzejY/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                    
-                    <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                    </div> 
-                </div>
-                
-                <h4>Ασκήσεις Β' ομάδας</h4>
-                <div class="youtube-player" data-id="khv8J_0Z5_k" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                    <img src="https://img.youtube.com/vi/khv8J_0Z5_k/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                    
-                    <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                    </div> 
-                </div>
-                
-            </div>               
         </div>
 
+        <div class="video-item">
+            <div class="youtube-player" data-id="zNDas4RVe8s" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/zNDas4RVe8s/0.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                2.2 Διάταξη πραγματικών αριθμών (Ασκήσεις Α' ομάδας)
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="yQtlJzF4fPA" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/yQtlJzF4fPA/0.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                2.2 Διάταξη πραγματικών αριθμών (Ασκήσεις Α' ομάδας)
+            </div>
+        </div>
         
-        
-       
-        
-  
-    </body>
+        <div class="video-item">
+            <div class="youtube-player" data-id="yQtlJzF4fPA" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/yQtlJzF4fPA/0.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;">
+                <div class="play-button"></div> 
+            </div> 
+            <div class="caption">
+                2.2 Διάταξη πραγματικών αριθμών (Ασκήσεις Β' ομάδας)
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="fHn1B2FUoKM" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/fHn1B2FUoKM/0.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                2.3 Απόλυτη τιμή πραγματικού αριθμού (Ασκήσεις Α' ομάδας)
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="ABU6WB5su9U" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/ABU6WB5su9U/0.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                2.3 Απόλυτη τιμή πραγματικού αριθμού (Ασκήσεις Β' ομάδας)
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="qEvxrcugLcQ" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/qEvxrcugLcQ/0.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                2.4 Ρίζες πραγματικών αριθμών (Ασκήσεις Α' ομάδας)
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="D-EX-UkWwQ0" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/D-EX-UkWwQ0/0.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                2.4 Ρίζες πραγματικών αριθμών (Ασκήσεις Β' ομάδας)
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="C1-6VF555_k" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/C1-6VF555_k/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                3.1 Εξισώσεις πρώτου βαθμού (Ασκήσεις Α' ομάδας)
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="XfS28VsWIjI" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/XfS28VsWIjI/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                3.1 Εξισώσεις πρώτου βαθμού (Ασκήσεις Β' ομάδας)
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="cexJ-JNEwbo" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/cexJ-JNEwbo/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                3.2 Η εξίσωση \(x^n = a\) 
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="XCZhRvK4Tmo" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/XCZhRvK4Tmo/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                3.3 Εξισώσεις δευτέρου βαθμού (Ασκήσεις Α' ομάδας)
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="Jln4KV7Uy30" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/Jln4KV7Uy30/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                3.3 Εξισώσεις δευτέρου βαθμού (Ασκήσεις Β' ομάδας)
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="2tfWnjaJHAU" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/2tfWnjaJHAU/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                4.1 Ανισώσεις πρώτου βαθμού (Ασκήσεις Α' ομάδας)
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="MuEP-AaV1_A" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/MuEP-AaV1_A/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                4.1 Ανισώσεις πρώτου βαθμού (Ασκήσεις Β' ομάδας)
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="vjzq7AiDELM" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/vjzq7AiDELM/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                4.2 Ανισώσεις δευτέρου βαθμού (Ασκήσεις Α' ομάδας)
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="YKDueuIHXGQ" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/YKDueuIHXGQ/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                4.2 Ανισώσεις δευτέρου βαθμού (Ασκήσεις Β' ομάδας)
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="MTVrFXLSMAM" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/MTVrFXLSMAM/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div>
+            <div class="caption">
+                5.1 Ακολουθίες
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="7lyENGGXVsk" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/7lyENGGXVsk/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                5.2 Αριθμητική Πρόοδος (Ασκήσεις Α' ομάδας)
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="mXmuPjV-xdM" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/mXmuPjV-xdM/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div>
+            <div class="caption">
+                5.2 Αριθμητική Πρόοδος (Ασκήσεις Β' ομάδας)
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="z-HDNq9bCcY" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/z-HDNq9bCcY/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div>
+            <div class="caption">
+                5.3 Γεωμετρική Πρόοδος (Ασκήσεις Α' ομάδας)
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="UL7OYDqAdYk" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/UL7OYDqAdYk/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                5.3 Γεωμετρική Πρόοδος (Ασκήσεις Β' ομάδας)
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="jc0uCip-38U" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/jc0uCip-38U/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                6.1 Η έννοια της συνάρτησης
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="8NjURvwdRsw" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/8NjURvwdRsw/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div>
+            <div class="caption">
+                6.2 Γραφική παράσταση συνάρτησης
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="RM8ezvPzejY" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/RM8ezvPzejY/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div>
+            <div class="caption">
+                6.3 Η συνάρτηση \(f(x) = ax + β\) (Ασκήσεις Α' ομάδας)
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="khv8J_0Z5_k" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/khv8J_0Z5_k/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                6.3 Η συνάρτηση \(f(x) = ax + β\) (Ασκήσεις Β' ομάδας)
+            </div>
+        </div>
+    </div>
+</body>
 </html>

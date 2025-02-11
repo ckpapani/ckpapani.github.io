@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -14,11 +14,13 @@
             <script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
             </script>
         <!-- Fonts load -->
-            <link rel="preconnect" href="https://fonts.googleapis.com"> 
+            <!--Fonts CMU Serif-->
+            <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/cmu-serif" type="text/css"/>
+            <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> 
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
             <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-            rel="stylesheet">
+            rel="stylesheet"> -->
         <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
             <script src="https://kit.fontawesome.com/4f7094dc46.js" crossorigin="anonymous"></script>     
@@ -35,17 +37,23 @@
             <a href="index.html"><img src="images/mathVideos.jpg"></a>
     
             <!-- Navigation links (hidden by default) -->
-            <div id="myLinks">
+            <div id="hamburgerLinks">
                 <div class="dropdownMenu"> 
                     <div id="junior">Γυμνάσιο</div>
                     
                     <div class="dropdown-content" id="juniorIndex">
-                        <a href="aGymnasiou.html">A' Γυμνασίου</a>
-                        <a href="bGymnasiou.html">Β' Γυμνασίου</a>
-                        <a href="gGymnasiou.html">Γ' Γυμνασίου</a>
+                        <div style="margin: 10px; padding-left: 5px; text-decoration: underline;">A' Γυμνασίου</div>
+                        <a href="aGymnasiouAlgebra.html">Άλγεβρα</a>
+                        <a href="aGymnasiouGeometria.html">Γεωμετρία</a>
+                        <div style="margin: 10px; padding-left: 5px;">B' Γυμνασίου</div>
+                        <a href="bGymnasiouAlgebra.html">Άλγεβρα</a>
+                        <a href="bGymnasiouGeometria.html">Γεωμετρία</a>
+                        <div style="margin: 10px; padding-left: 5px;">Γ' Γυμνασίου</div>
+                        <a href="gGymnasiouAlgebra.html">Άλγεβρα</a>
+                        <a href="gGymnasiouGeometria.html">Γεωμετρία</a>
                     </div>
                 </div>
-                
+            
                 <div class="dropdownMenu">
                     <div id="high">Λύκειο</div>
                         
@@ -79,107 +87,36 @@
             <img src="images/bannerMathVideosNew (1).png" alt="bannerMathVideos" style="width: 100%">
         </div>
 
+        <h1 style="color: gold; text-align: center;">Μάθε τα μαθηματικά μόνος σου!</h1>
+                <h2 style="color: gold; text-align: center;">Διάλεξε την τάξη σου:</h2>
+                    <div class="courses-container">
+                        <div class="course" id = "modalBtnAGym"> Α' Γυμνασίου</div>
+                            
+                            <!-- <div id="AGymInfo" class="modal">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    
+                                    <img src="mathAGymnasiou.jpg" alt="Γεωμετρία" width="30%">
+                                    <h2>Α' Γυμνασίου</h2>
+                                        <div class="lessonInfo" style="margin-bottom: 10pt;">
+                                            Τα μαθηματικά της Α' Γυμνασίου χωρίζονται σε δύο μέρη, το πρώτο μέρος λέγεται Άλγεβρα και η διδακτέα ύλη του αποτελείται από 6 κεφάλαια, τα κεφάλαια 1, 2, 3, 4, 5 και 7. Ενώ το δεύτερο μέρος λέγεται Γεωμετρία και η διδακτέα ύλη του αποτελείται από 3 κεφάλαια, τα κεφάλαια 1, 2 και 3 του σχολικού βιβλίου.
+                                        </div>
+                                        <button class="btn">Άλγεβρα</button>
+                                        <button class="btn">Γεωμετρία</button>
+                                </div>
+                            </div> -->
+                        
+                        
+                        <div class="course" id = "modalBtnΒGym"> Β' Γυμνασίου</div>
 
-
-
-        <div class="main">
-            <div class="section">
-                <h2>Μερικά βασικά μαθήματα</h2>
-                
-                <div class="accordion">
-                    <h3> Πρόσθεση</h3>
-                    <div class="youtube-player" data-id="WHNTNhtlwKw" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                        <img src="https://img.youtube.com/vi/WHNTNhtlwKw/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                        
-                        <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                        </div> 
+                        <div class="course"> Γ' Γυμνασίου</div>
+                        <div class="course"> Α' Λυκείου</div>
+                        <div class="course"> Β' Λυκείου</div>
+                        <div class="course"> Γ' Λυκείου</div>
+                        <div class="course"> Πανεπιστήμιο</div>
                     </div> 
-    
-                    <h3> Πολλαπλασιασμός</h3>
-                    <div class="youtube-player" data-id="NINDOBUppOI" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                        <img src="https://img.youtube.com/vi/NINDOBUppOI/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                        
-                        <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                        </div> 
-                    </div>
-    
-                    <h3> Διαίρεση</h3>
-                    <div class="youtube-player" data-id="XF13PK3YK3U" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                        <img src="https://img.youtube.com/vi/XF13PK3YK3U/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                        
-                        <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                        </div> 
-                    </div> 
-                    
-                    <h3> Κλάσματα</h3>
-                    <div class="youtube-player" data-id="nQq_Y_W-QLU" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                        <img src="https://img.youtube.com/vi/nQq_Y_W-QLU/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                        
-                        <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                        </div> 
-                    </div> 
-    
-                    <h3> Σύγκριση κλασμάτων</h3>
-                    <div class="youtube-player" data-id="WcAwhIRSBk4" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                        <img src="https://img.youtube.com/vi/WcAwhIRSBk4/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                        
-                        <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                        </div> 
-                    </div> 
-                    
-                    <h3> Ελάχιστο κοινό πολλαπλάσιο</h3>
-                    <div class="youtube-player" data-id="1JATYdXx3D0" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                        <img src="https://img.youtube.com/vi/1JATYdXx3D0/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                        
-                        <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                        </div> 
-                    </div>
-    
-                    <h3> Πράξεις με κλάσματα</h3>
-                    <div class="youtube-player" data-id="1z2Ua16ANdI" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                        <img src="https://img.youtube.com/vi/1z2Ua16ANdI/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                        
-                        <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                        </div> 
-                    </div>
-    
-                    <h3> Δυνάμεις πραγματικών αριθμών</h3>
-                    <div class="youtube-player" data-id="CgZQu42kPPY" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                        <img src="https://img.youtube.com/vi/CgZQu42kPPY/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                        
-                        <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                        </div> 
-                    </div>
-    
-                    <h3> Δευτεροβάθμια εξίσωση (Τριώνυμο)</h3>
-                    <div class="youtube-player" data-id="zAE0eY96UDU" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                        <img src="https://img.youtube.com/vi/zAE0eY96UDU/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                        
-                        <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                        </div> 
-                    </div> 
-    
-                    <h3> Γραφική παράσταση συνάρτησης</h3>
-                    <div class="youtube-player" data-id="QNi1xlFnPNo" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                        <img src="https://img.youtube.com/vi/QNi1xlFnPNo/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                        
-                        <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                        </div> 
-                    </div>
-    
-                    <h3> Τριγωνομετρία (Τα βασικά)</h3>
-                    <div class="youtube-player" data-id="AuGmh690bPo" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                        <img src="https://img.youtube.com/vi/AuGmh690bPo/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                        
-                        <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                        </div> 
-                    </div>
-                </div>
-            </div>
-        </div>
-  
-        <div class="footer" style="text-align: center; color: chartreuse; font-size: 8pt;">
-            created by Christoforos Papanikolaou
+        <div class="footer" style="text-align: center; color: chartreuse; font-size: 10pt;">
+            Η ιστοσελίδα mathVideos δημιουργήθηκε από τον Χριστόφορο Παπανικολάου στα πλαίσια ενός διαδικτυακού μαθήματος HTML CSS και JavaScript που παρακολούθησε.
         </div>
     </body>
 </html>

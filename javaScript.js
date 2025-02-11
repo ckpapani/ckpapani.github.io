@@ -10,13 +10,6 @@ $(".hamburger").click(function(){
 });
 
 
-
-/* $( ".dropdown" ).accordion({
-  collapsible: true,
-  active: true,
-  heightStyle: "content"
-}); */
-
 $(document).ready(function(){
     $("#junior").click(function(event){
       event.stopPropagation();
@@ -72,7 +65,33 @@ for (let n = 0; n < v.length; n++) {
       }; 
     } 
 
+    var modalAGym = document.getElementById("AGymInfo");
+    /* var modalBGym = document.getElementById("BGymInfo");
+    var modalGGym = document.getElementById("GGymInfo");
+    var modalALyk = document.getElementById("ALykInfo");
+    var modalBLyk = document.getElementById("BLykInfo");
+    var modalGLyk = document.getElementById("GLykInfo");
+    var modalPanep = document.getElementById("PanepInfo");*/
 
+    var modalBtnAGym = document.getElementById("modalBtnAGym");
+    var closeBtn = document.querySelector(".close");
+
+    // Όταν πατάς το κουμπί, εμφανίζεται το modal
+    modalBtnAGym.onclick = function() {
+      modalAGym.style.display = "block";
+    }
+
+    // Όταν πατάς το X, κλείνει το modal
+    closeBtn.onclick = function() {
+        modalAGym.style.display = "none";
+    }
+
+    // Όταν κάνεις κλικ έξω από το modal, κλείνει
+    window.onclick = function(event) {
+        if (event.target == modalAGym) {
+            modalAGym.style.display = "none";
+        }
+    }
 
 
 

@@ -1,27 +1,14 @@
 @media (max-width: 479px) {
-    body{
-        font-family: 'Comfortaa'; 
-        color: white;
-        margin: 10px 0px;
-        background-color: #333;
-        font-size: 10pt;
-        line-height: 1.8em;
-    }
-
-    .nested{
-        margin: 0;
-        font-size: 10pt;
-        width: 80%;
-    }
-    
+    /* .modal-content{
+        display: none;
+    } */
     .navbar img{ 
         width: 50px; 
         position: relative;
         left: 10px; 
         box-shadow: 0 0 10px black; 
     }
-    
-    #myLinks{
+    #hamburgerLinks{
         display: none;
         position: fixed;
         right: 20px;
@@ -31,11 +18,9 @@
         box-shadow: 0px 8px 16px 0px black;
         z-index: 1;
     }
-    
-    #myLinks div{
+    #hamburgerLinks div{
         margin: 20px 15px;
     }
-    
     .dropdown-content a{
         color: white;
         padding: 12px 16px;
@@ -43,8 +28,6 @@
         text-align: left;
         text-decoration: none;
     }
-
-
     .hamburger {
         font-size: 2em;
         color: white;
@@ -52,113 +35,15 @@
         right: 20px;
         top: 16px;
     }
-
-    p{
-       margin: 5px;
-       text-align: justify;   
-    }
-
-    ul{
-        
-    }
-
-    a{
-        text-decoration: none;
-        color: white;
-    }
-
-    ul.schoolMenu{
-        margin: 0 auto;
-        text-align: center;
-    }
-    li.schoolMenu{
-        display: inline-block;
-        vertical-align: top;
-        background-color: maroon;
-        border-radius: 10px;
-        border: 1px solid gold;
-        padding: 10px;
-        margin: 10px;
-    }
-    
-
-    h1 {
-        text-shadow: 0 0 20px black;
-        color:gold;
-        text-align: center;
-        font-size: 14pt;
-    }
-
-    h2{
-        color: gold;
-        text-align: center;
-        line-height: 1.5em;
-        font-size: 12pt;
-        text-shadow: 0 0 10px black;
-    }
-    
-    h4{
-        margin-left: 20px;
-        margin-right: 20px;
-        line-height: 30px;
-        font-weight: normal;
-        text-align: center;
-    }
-
-    h3:before{
-        content: "\f144 ";
-        font-family: FontAwesome;
-    }
-
-    h2.schoolDiary{
-        text-align: left; 
-        padding: 0 20px;
-        text-shadow: 10px 10px 20px black;
-    }
-    ul.schoolDiary{
-        padding: 0 5%;
-    }
-    
     .section{
         margin: 10px;
         padding: 1px;
         background-color: #50543f;
     }
-    
-    
-    p.schoolDiary{
-        font-size: 8pt;
-        margin-top: 20px;
-    }
-
-    li.schoolDiary{
-        line-height: 20px;
-        border: 1px solid darkgoldenrod;
-        padding: 10px;
-        background-color: maroon;
-        border-radius: 10px;
-        box-shadow: 0 10px 20px black;
-        text-align: center;
-        list-style-type: none;
-    }
-    
-    h3{
-        margin-left: 25px;
-        margin-right: 25px;
-        line-height: 25px;
-        font-weight: normal;
-        font-size: 10pt;
-    }
-
-    h3 span{
-        color: gold;
-        display: inline-block;
-        font-size: smaller;
-        /* padding: 10px; */
-        /* border: 1px solid white; */
-    }
-
-    .schoolDiary a{
-        color: gold;
-    }    
+    .video-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        padding: 20px;
+    } 
 }

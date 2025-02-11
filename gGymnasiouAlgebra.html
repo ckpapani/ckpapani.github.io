@@ -1,221 +1,319 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="og:image" content="mathvideosthumb.png" />
-        <title>Γ' Γυμνασίου Άλγεβρα</title>
-        
-        <!-- My Style css --> <link rel="stylesheet" href="style.css">
-        <!-- Mobile Style css --> <link rel="stylesheet" href="mobile.css">
-        <!-- My JavaScript load --><script defer src="javaScript.js" ></script>
-        <!-- LaTeX Equations -->
-            <script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-            </script>
-        <!-- Fonts load -->
-            <link rel="preconnect" href="https://fonts.googleapis.com"> 
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-            <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
-            <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-            rel="stylesheet">
-        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-            <script src="https://kit.fontawesome.com/4f7094dc46.js" crossorigin="anonymous"></script>     
-        <!-- Accordion -->
-            <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-            
-    </head>
-
-    <body>
-        <div class="navbar">
-        
-            <a href="index.html"><img src="images/mathVideos.jpg"></a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="mathvideosthumb.png" />
+    <title>mathVideos.gr</title>
     
-            <!-- Navigation links (hidden by default) -->
-            <div id="myLinks">
-                <div class="dropdownMenu"> 
-                    <div id="junior">Γυμνάσιο</div>
-                    
-                    <div class="dropdown-content" id="juniorIndex">
-                        <a href="aGymnasiou.html">A' Γυμνασίου</a>
-                        <a href="bGymnasiou.html">Β' Γυμνασίου</a>
-                        <a href="gGymnasiou.html">Γ' Γυμνασίου</a>
-                    </div>
-                </div>
-                
-                <div class="dropdownMenu">
-                    <div id="high">Λύκειο</div>
-                        
-                    <div class="dropdown-content" id="highIndex">
-                            <a href="aLykeiou.html">A' Λυκείου</a>
-                            <a href="bLykeiou.html">Β' Λυκείου</a>
-                            <a href="gLykeiou.html">Γ' Λυκείου</a>
-                        </div>
-                </div>
-                
-                <div class="dropdownMenu">
-                    <div id="material">Υλικό</div>
-                        
-                    <div class="dropdown-content" id="materialIndex">
-                            <a href="panellinies.html">Θέματα Πανελληνίων</a>
-                    </div>
-                </div>
+    <!-- My Style css --> <link rel="stylesheet" href="style.css">
+    <!-- Mobile Style css --> <link rel="stylesheet" href="mobile.css">
+    <!-- My JavaScript load --><script defer src="javaScript.js" ></script>
+    <!-- LaTeX Equations -->
+        <script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
+    <!-- Fonts load -->
+        <!--Fonts CMU Serif-->
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/cmu-serif" type="text/css"/>
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet"> -->
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <script src="https://kit.fontawesome.com/4f7094dc46.js" crossorigin="anonymous"></script>     
+    <!-- Accordion -->
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
 
 
+<body>
+
+    <div class="navbar">
+    
+        <a href="index.html"><img src="images/mathVideos.jpg"></a>
+
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <div class="dropdownMenu"> 
+                <div id="junior">Γυμνάσιο</div>
+                
+                <div class="dropdown-content" id="juniorIndex">
+                    <a href="aGymnasiou.html">A' Γυμνασίου</a>
+                    <a href="bGymnasiou.html">Β' Γυμνασίου</a>
+                    <a href="gGymnasiou.html">Γ' Γυμνασίου</a>
                 </div>
             </div>
-    
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a class="hamburger">
-                <i class="fa fa-bars"></i>
-            </a>
-    
-        </div>
-        <hr>
         
-        <h1>Μαθηματικά Γ' Γυμνασίου</h1>
-        <h1 class="schoolDiary">Μέρος Πρώτο: Άλγεβρα</h1>
-        <div class="section">
-            
-            <h2 class="schoolDiary">Κεφάλαιο 1: Αλγεβρικές παραστάσεις </h2>
-
-            <ul class="schoolDiary">
-                <li class="schoolDiary">1.1 - Πράξεις με ρητούς I</li>
-                <p class="schoolDiary">
-                    Σήμερα θυμηθήκαμε πώς γίνονται οι πράξεις στους ρητούς αριθμούς. Πρόσθεση και αφαίρεση ομόσημων και ετερόσημων καθώς και πολλαπλασιασμός και διαίρεση με ομόσημους και ετερόσημους. <br>
-                    Μπορείτε να κατεβάσετε το μάθημα <a href="gGymnasiou/praxeisMeRitous.pdf">εδώ</a>.
-                </p> 
-
-                <li class="schoolDiary">1.1 - Πράξεις με ρητούς II</li>
-                <p class="schoolDiary">
-                    Λύσαμε ασκήσεις πάνω στις πράξεις με ρητούς αριθμούς. Τονίσαμε ότι είναι πολύ σημαντικό πριν κάνουμε τις πράξεις, να ξεχωρίσουμε τους όρους μίας αριθμητικής παράστασης. Όροι είναι αυτοί που χωρίζουν μεταξύ τους με -, + ενώ όταν δύο αριθμοί έχουν μεταξυ τους \(\cdot\) ή : τότε είναι κολλημένοι και αποτελούν έναν όρο. 
-                    Μπορείτε να κατεβάσετε το μάθημα <a href="gGymnasiou/praxeisMeRitous2.pdf">εδώ</a>.<br>
-                    Κατεβάστε το πρώτο φυλλάδιο ασκήσεων <a href="gGymnasiou/1oFylladioAskiseon.pdf">εδώ</a> (Παράδοση μέχρι την Πέμπτη 06/10/2022 είτε σε χαρτί είτε με φωτογραφία, scanner ή ό,τι άλλο θέλετε στο mail ckpapani@gmail.com).
-                </p>
-
-                <li class="schoolDiary">1.1 - Δυνάμεις</li>
-                <p class="schoolDiary">
-                    Σήμερα είδαμε τις ιδιότητες των δυνάμεων και λύσαμε κάποιες ασκήσεις. <br>
-                    Κατεβάστε το μάθημα <a href="/gGymnasiou/dynameis1.pdf" download="Ιδιότητες δυνάμεων Ι">εδώ</a>.
-
-                    <div class="youtube-player" data-id="CgZQu42kPPY" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                        <img src="https://img.youtube.com/vi/CgZQu42kPPY/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                        
-                        <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                        </div> 
+            <div class="dropdownMenu">
+                <div id="high">Λύκειο</div>
+                    
+                <div class="dropdown-content" id="highIndex">
+                        <a href="aLykeiou.html">A' Λυκείου</a>
+                        <a href="bLykeiou.html">Β' Λυκείου</a>
+                        <a href="gLykeiou.html">Γ' Λυκείου</a>
                     </div>
-                </p>
+            </div>
+            
+            <div class="dropdownMenu">
+                <div id="material">Υλικό</div>
+                    
+                <div class="dropdown-content" id="materialIndex">
+                        <a href="https://apps1.minedu.gov.gr/efarmoges/themata.php">Θέματα Πανελληνίων</a>
+                        <a href="https://trapeza-thematon.gr">Τράπεζα Θεμάτων Μεθοδικό</a>
+                </div>
+            </div>
+        </div>
+    
 
-                <li class="schoolDiary">1.2 - Μονώνυμα και πράξεις με αυτά</li>
-                <p class="schoolDiary">
-                    Σήμερα είδαμε τα μονώνυμα, δηλαδή τις αλγεβρικές παραστάσεις που αποτελούνται από έναν όρο, τον συντελεστή που είναι μποροστά και το κύριο μέρος. Για παράδειγμα η παράσταση \(-3x^3y^7\) αποτελεί ένα μονώνυμο. Το σημαντικό είναι ότι μπορώ να προσθέτω και να αφαιρώ μονώνυμα μόνο όταν είναι όμοια, δηλαδή μόνο όταν έχουν ίδιο κύριο μέρος. Τώρα, για τον πολλαπλασιασμό και τη διαίρεση δε χρειάζεται να είναι όμοια και μπορώ να πολλαπλασιάζω και να διαιρώ μονώνυμα χρησιμοποιώντας τις ιδιότητες των δυνάμεων. <br>
-                    Κατεβάστε το μάθημα <a href="/gGymnasiou/mathima4_mononyma.pdf" download="Μάθημα 4 - Μονώνυμα και πράξεις με αυτά">εδώ</a>. <br>
-                                     
-                        <div class="youtube-player" data-id="OnsK1KYvc4Y" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:70%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                            <img src="http://i3.ytimg.com/vi/OnsK1KYvc4Y/0.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                            
-                            <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                            </div> 
-                        </div>
-                </p>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a class="hamburger">
+            <i class="fa fa-bars"></i>
+        </a>
 
-                <li class="schoolDiary">1.3 - Πολυώνυμα</li>
-                <p class="schoolDiary">
-                    Σήμερα είδαμε τα πολυώνυμα και λύσαμε μερικές ασκήσεις. Είδαμε ότι το πολυώνυμο δεν είναι τίποτα άλλο από πολλά μονώνυμα μαζί. Μάθαμε να προσθέτουμε δύο πολυώνυμα. <br>
-                    Κατεβάστε το μάθημα <a href="/gGymnasiou/mathima5_polyonyma.pdf">εδώ</a>. <br>
-                    Κατεβάστε το 2ο φυλλάδιο ασκήσεων με ημερομηνία παράδοσης την Πέμπτη στις 19/10 <a href="/gGymnasiou/2oFylladioAskiseon.pdf">εδώ</a>.
-                </p>
+    </div>
+    
+    
+    <div>
+        <img src="images/bannerMathVideosNew (1).png" alt="bannerMathVideos" style="width: 100%">
+    </div>
 
-                <li class="schoolDiary">1.3 - Πράξεις με πολυώνυμα Ι</li>
-                <p class="schoolDiary">
-                    Σήμερα είδαμε πως κάνουμε πράξεις με πολυώνυμα. Λύσαμε ασκήσεις από το σχολικό βιβλίο. Τέλος είδαμε ότι όταν πολλαπλασιάσουμε δύο πολυώνυμα εφαρμόζουμε την επιμεριστική ιδιότητα. Θυμηθειτε! Πολλαπλασιάζω δύο μονώνυμα ως εξής: 1. Πρόσημο 2. αριθμοί 3. γράμματα                 
-                    <br>
-                    Κατεβάστε το μάθημα <a href="/gGymnasiou/mathima6_pollaplasiasmosPolyonymon.pdf" download="Μάθημα 6 - Πράξεις με πολυώνυμα">εδώ</a>
-                </p>
-
-                <li class="schoolDiary">1.3 - Πράξεις με πολυώνυμα ΙΙ</li>
-                <p class="schoolDiary">
-                    Σήμερα είδαμε λίγες ασκήσεις παραπάνω πάνω στις πράξεις με πολυώνυμα. Την επόμενη Τετάρτη θα γράψουμε το πρώτο τεστ πάνω στις πράξεις με πολυώνυμα. <br>
-                    Κατεβάστε το μάθημα <a href="/gGymnasiou/mathima7_praxeisMePolyonimaII.pdf" download="Μάθημα 7 - Πράξεις με πολυώνυμα ΙΙ">εδώ</a>.
-                </p>
-
-                <li class="schoolDiary">1.5 - Η ταυτότητα \((a+\beta)^2 = a^2 + 2a\beta + \beta^2\)</li>
-                <p class="schoolDiary">
-                    Σήμερα είδαμε την ταυτότητα που ονομάζουμε τετράγωνο διαφοράς και λύσαμε ασκήσεις πάνω σ' αυτή. Σας έφτιαξα ένα video που ίσως βοηθήσει.
-                        <div class="youtube-player" data-id="9MSRli4TGj8" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:70%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                            <img src="http://i3.ytimg.com/vi/9MSRli4TGj8/0.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                            
-                            <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                            </div> 
-                        </div> <br>    
-                    Κατεβάστε το μάθημα <a href="/gGymnasiou/mathima8_TetragonoAthroismatos.pdf" download="Μάθημα 8 - Τετράγωνο αθροίσματος">εδώ</a>.
-                </p>
-
-                <li class="schoolDiary">1.1 - Τετραγωνική ρίζα πραγματικού αριθμού</li>
-                <p class="schoolDiary">
-                    Σήμερα είδαμε τις λύσεις του τεστ και τη δεύτερη ώρα θυμηθήκαμε τις ιδιότητες των τετραγωνικών ριζών. <br>
-                    Κατεβάστε το μάθημα <a href="/gGymnasiou/mathima9_TetragonikiRiza.pdf" download="Μάθημα 9 - Τετραγωνική ρίζα">εδώ</a>.
-                </p>
-
-                <li class="schoolDiary">1.5 - Η ταυτότητα \((α-β)^2 = α^2 - 2αβ+β^2\)</li>
-                <p class="schoolDiary">
-                    Σήμερα είδαμε την ταυτότητα του τετραγώνου της διαφοράς και λύσαμε ασκήσεις πάνω σ' αυτή. <br>
-                    Κατεβάστε το μάθημα <a href="/gGymnasiou/mathima10_TetragonoDiaforas.pdf" download="Μάθημα 10 - Τετράγωνο διαφοράς">εδώ</a>.                
-                </p>
-
-                <li class="schoolDiary">1.5 - Οι ταυτότητες</li>
-                <p class="schoolDiary">
-                    Σας επισυνάπτω το βίντεο που έχω ανεβάσει με ασκήσεις πάνω στις ταυτότητες. 
-                    <div class="youtube-player" data-id="qCmpzwiRZTs" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:70%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
-                        <img src="http://i3.ytimg.com/vi/qCmpzwiRZTs/0.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                        
-                        <div style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                        </div> 
-                    </div> <br>     
-                </p>
-
-                <li class="schoolDiary">1.6 - Παραγοντοποίηση Ι </li>
-                <p class="schoolDiary">
-                    Σας επισυνάπτω το pdf με τα μαθήματα που έχουμε κάνει πάνω στην παραγοντοποίηση αλγεβρικών παραστάσεων. <br>
-                    Κατεβάστε το <a href="/gGymnasiou/mathima11_Paragontopioisi1.pdf">εδώ</a>
-                </p>
-
-                <li class="schoolDiary">1.6 - Παραγοντοποίηση ΙΙ </li>
-                <p class="schoolDiary">
-                    Σήμερα κάναμε παραγοντοποίηση όταν η αλγεβρική παράσταση που έχουμε να παραγοντοποιήσουμε είναι διαφορά τετραγώνων ή τουλάχιστον μοίαζει με διαφορά τετραγώνων. Μάθαμε λοιπόν κάποιες τεχνικές που μπορούμε να μετασχηματίζουμε μία αλγεβρική παράσταση σε διαφορά τετραγώνων. <br>
-                    Κατεβάστε το μάθημα <a href="/gGymnasiou/mathima12_Paragontopoiisi2.pdf">εδώ</a>
-                </p>
-
-                <li class="schoolDiary">1.6 - Παραγοντοποίηση III</li>
-                <p class="schoolDiary">
-                    Η τελευταία μέθοδος παραγοντοποίησης που βασίζεται στις ταυτότητες \((a+\beta)^2 = a^2 + 2a\beta + \beta^2\) και \((a-\beta)^2 = a^2 - 2a\beta + \beta^2\). <br>
-                    Κατεβάστε το μάθημα <a href="/gGymnasiou/parAnaptygmaTetragonou.pdf">εδώ</a> <br>
-                    Κατεβάστε όλα αυτά που κάναμε στην παραγοντοποίηση <a href="/gGymnasiou/paragontopoiisi.pdf">εδώ</a>.
-                </p>
-
-                <li class="schoolDiary">1.8 - ΕΚΠ και ΜΚΔ αλγεβρικών παραστάσεων</li>
-                <p class="schoolDiary">
-                    Είδαμε πως βρίσκουμε το Ελάχιστο Κοινό Πολλαπλάσιο (ΕΚΠ) αλγεβρικών παραστάσεων. Διατυπώσαμε τον κανόνα ότι το ΕΚΠ αποτελείται από τους κοινούς και μη κοινούς παράγοντες με το μεγαλύτερο εκθέτη.  <br>
-                    Κατεβάστε το μάθημα <a href="/gGymnasiou/ekpKaiMkd.pdf">εδώ</a>.
-                </p>
-
-                <li class="schoolDiary">1.9 - Ρητές Αλγεβρικές Παραστάσεις</li>
-                <p class="schoolDiary">
-                    Όταν λέμε ρητές παραστάσεις εννοούμε τις αλγεβρικές παραστάσεις που είναι κλάσματα και έχουν μία αλγεβρική παράσταση στον αριθμητή και μία στον παρονομαστή. Εμείς ασχοληθήκαμε με το πεδίο ορισμού των κλασμάτων αυτών, δηλαδή για ποιες τιμές του x ορίζεται κάποια ρητή παράσταση. Επίσης κάναμε και απλοποίηση ρητών παραστάσεων. <br>
-                    Κατεβάστε το μάθημα <a href="/gGymnasiou/ritesAlgebParastaseis.pdf">εδώ</a>.
-                </p>
-
-                <li class="schoolDiary">1.10 - Πράξεις Ρητών Παραστάσεων</li>
-                <p class="schoolDiary">
-                    Εδώ μαθαίνουμε να κάνουμε πράξεις με ρητές αλγεβρικές παραστάσεις, δηλαδή με παραστάσεις που είναι κλάσματα. Πολλαπλασιάζουμε, διαιρούμε, προσθέτουμε και αφαιρούμε τα κλάσματα αυτά. Είναι σημαντικό να καταλάβετε πως χρησιμοποιούμε το ΕΚΠ των παρονομαστών. <br>
-                    Κατεβάστε το μάθημα <a href="/gGymnasiou/praxeisRitonParastaseon.pdf">εδώ</a>.
-                </p>
-                
-            </ul>
+    <h1 class="welcome">Καλωσήρθες στην Άλγεβρα της Γ' Γυμνασίου</h1>
+    <div class="video-grid">
+        <div class="video-item">
+            <div class="youtube-player" data-id="X-mpwGSRalM" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/X-mpwGSRalM/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                Επανάληψη στις πράξεις ρητών αριθμών
+            </div>
         </div>
         
-    </body>
+        <div class="video-item">
+            <div class="youtube-player" data-id="OnsK1KYvc4Y" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/OnsK1KYvc4Y/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                1.2 Μονώνυμα - πράξεις με αυτά
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="gSgwzkA181A" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/gSgwzkA181A/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                1.3 Πολυώνυμα - Πρόσθεση και αφαίρεση πολυωνύμων
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="1vgQVZB8aXw" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/1vgQVZB8aXw/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                1.4 Πολλαπλασιασμός πολυωνύμων (1ο μέρος)
+            </div>
+        </div>
+        
+        <div class="video-item">
+            <div class="youtube-player" data-id="6GQqRLkvGW0" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/6GQqRLkvGW0/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                1.4 Πολλαπλασιασμός πολυωνύμων (2ο μέρος)
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="9RxvNm5VFRA" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/9RxvNm5VFRA/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                1.5 Ταυτότητες (1ο μέρος)
+            </div>
+        </div>
+
+        
+        <div class="video-item">
+            <div class="youtube-player" data-id="UQz5u9PmuIA" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/UQz5u9PmuIA/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                1.5 Ταυτότητες (2ο μέρος)
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="_KjP5ww0Awo" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/_KjP5ww0Awo/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                1.5 Ταυτότητες (3ο μέρος)
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="V9apqneVc5Q" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/V9apqneVc5Q/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                1.5 Ταυτότητες (4ο μέρος)
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="EFwLfxb8NFk" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/EFwLfxb8NFk/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                1.6 Παραγοντοποίηση (1ο μέρος)
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="Da4MbNdPJAU" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/Da4MbNdPJAU/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                1.6 Παραγοντοποίηση (2ο μέρος)
+            </div>
+        </div>
+         
+        <div class="video-item">
+            <div class="youtube-player" data-id="vAVMUktSqdo" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/vAVMUktSqdo/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                1.6 Παραγοντοποίηση (3ο μέρος)
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="FtH29svAAOc" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/FtH29svAAOc/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                1.6 Παραγοντοποίηση (4ο μέρος)
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="qPbvxgMMkUU" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/qPbvxgMMkUU/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                1.6 Παραγοντοποίηση (5ο μέρος) 
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="jiye7YJsBK4" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/jiye7YJsBK4/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                1.8 ΕΚΠ και ΜΚΔ αλγεβρικών παραστάσεων (1ο μέρος)
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="rPmahLKRjac" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/rPmahLKRjac/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                1.8 ΕΚΠ και ΜΚΔ αλγεβρικών παραστάσεων (2ο μέρος)
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="vmipEqXPXss" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/vmipEqXPXss/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                1.9 Ρητές Αλγεβρικές Παραστάσεις (1ο μέρος)
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="wGPaBqYxqpk" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/wGPaBqYxqpk/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                1.9 Ρητές Αλγεβρικές Παραστάσεις (2ο μέρος)
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="s3fsQjnzMks" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/s3fsQjnzMks/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                1.9 Ρητές Αλγεβρικές Παραστάσεις (3ο μέρος)
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="X5Nvc01ojxo" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/X5Nvc01ojxo/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                1.10 Πράξεις με ρητές αλγεβρικές παραστάσεις (1ο μέρος)
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="zaq-FCGVDPk" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/zaq-FCGVDPk/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                1.10 Πράξεις με ρητές αλγεβρικές παραστάσεις (2ο μέρος)
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="lMtS2VkYjpw" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/lMtS2VkYjpw/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                1.10 Πράξεις με ρητές αλγεβρικές παραστάσεις (3ο μέρος)
+            </div>
+        </div>
+
+        <div class="video-item">
+            <div class="youtube-player" data-id="2EiummR2X1Q" data-related="1" data-control="1" data-info="1" data-fullscreen="1" style="width:80%; height:0; display: block; position: relative; cursor: pointer; padding-bottom:56.25%; margin:0 auto"> 
+                <img src="https://img.youtube.com/vi/2EiummR2X1Q/maxresdefault.jpg" style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
+                <div class="play-button"></div>
+            </div> 
+            <div class="caption">
+                1.10 Πράξεις με ρητές αλγεβρικές παραστάσεις (4ο μέρος)
+            </div>
+        </div>
+        
+    </div>
+</body>
 </html>

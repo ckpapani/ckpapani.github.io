@@ -1,25 +1,108 @@
+body {
+    font-family: 'CMUSerifRoman';
+    font-size: 2vw;
+    color: white;
+    background-color: #333;
+}
+.welcome{
+    color: gold;
+    text-align: center;
+    margin: auto 50px;
+}
+.courses-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    width: fit-content;
+    margin: 0 auto;
+}
+.course{
+    background-color:#50543f;
+    border-radius: 20pt;
+    margin: 10pt;
+    padding: 15pt;
+    border: 1px solid white;
+    min-height: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.course:nth-child(7){
+    grid-column: 2;
+}
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.play-button::before {
+    content: "▶";
+    font-size: 24px;
+    color: white;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.caption {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
 @media (min-width: 480px) {
-
-    body {
-        font-family: 'Comfortaa';
-        color: white;
-        background-color: #333;
-    }
-
-    .alert{
+/*     .modal{
+        display: none; 
         position: fixed;
-        right: 50%;
-        top: 50%;
-        padding: 10px;
-        border: 1px solid white;
-        width: 20%;
-        text-align: center;
-        color: yellow;
-        background-color: black;
-        box-shadow: 0px 0px 5px white;
-        z-index: 200;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
     }
-
+    .modal-content {
+        background-color: #333;
+        margin: 5% auto;
+        padding: 20px;
+        border-radius: 10px;
+        width: 30%;
+        text-align: center;
+        position: relative;
+        max-height: 80vh; 
+        overflow-y: auto; 
+    }
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .course:hover{
+        cursor: pointer;
+    }
+    .btn{
+        background-color: #50543f;
+        color: white;
+        border-radius: 10pt;
+        font-size: large;
+        font-family: inherit;
+        margin: 10pt;
+        padding: 10pt;
+    } */
     .navbar {
         display: flex;
         background-color: #333;
@@ -28,8 +111,6 @@
         top: 0px;
         z-index: +2;
     }
-
-
     .navbar img {
         height: 70px;
         border: 1px solid black;
@@ -38,30 +119,20 @@
         left: 5px;
         bottom: 5px;
         box-shadow: 0 0 10px black;
-
     }
-
     .navbar div {
         margin-left: 20px;
         color: white;
-        font-family: 'Comfortaa';
     }
-
     .hamburger {
         display: none;
     }
-
-
     .navbar div:hover {
         cursor: pointer;
     }
-
-
-
     .dropdownMenu {
         display: inline-block;
     }
-
     .dropdown-content {
         display: none;
         position: absolute;
@@ -71,19 +142,12 @@
         box-shadow: 0px 8px 15px 0px black;
         z-index: 1;
     }
-
     .dropdown-content a {
         color: white;
-        padding: 12px 16px;
+        padding: 10px 16px;
         display: block;
         text-align: left;
     }
-
-    .main {
-        margin: 50px 30px;
-        display: grid;
-    }
-
     .section {
         display: block;
         background-color: #50543f;
@@ -92,143 +156,26 @@
         margin: 30px;
         padding: 5px;
     }
-
     a {
         text-decoration: none;
         line-height: 30px;
         color: white;
         font-size: 12pt;
     }
-
-    p{
+    p {
         font-size: 12pt;
-        margin: 40px; 
+        margin: 40px;
         text-align: justify;
         line-height: 1.5em;
     }
-
     a:hover {
         cursor: pointer;
     }
-
-    ol,ul {
-        margin: 40px;
-        line-height: 25px;
-    }
-
-    li.schoolDiary {
-        width: 80%;
-        text-align: center;
-        background-color: maroon;
-        border: 1px solid darkgoldenrod;
-        box-shadow: 0 10px 10px black;
-        border-radius: 10px;
-        padding: 10px;
-        list-style-type: none;
-    }
-
-    .nested{
-        margin: 0;
-        font-size: 10pt;
-        width: 80%;
-    }
-
-    h1 {
-        color: gold;
-        text-align: center;
-        line-height: 50px;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 55px;
-        font-weight: normal;
-    }
-
-    h2 {
-        color: gold;
-        text-align: center;
-        line-height: 50px;
-        margin-left: 20px;
-        margin-right: 20px;
-        font-weight: normal;
-        text-shadow: 0 0 10px black;
-    }
-
-    h2.schoolDiary {
-        text-shadow: 10px 10px 20px black;
-        color: gold;
-        text-align: left;
-        padding: 0 50px;
-        padding-top: 50px;
-    }
-
-    ul.schoolDiary {
-        padding: 0 5%;
-    }
-
-    ul.schoolMenu{
-        margin: 0 auto;
-        text-align: center;
-    }
-    li.schoolMenu{
-        display: inline-block;
-        vertical-align: top;
-        background-color: maroon;
-        border-radius: 10px;
-        border: 1px solid gold;
-        padding: 10px;
-        margin: 10px;
-    }
-
-
-
-    h3 {
-        color: white;
-        text-align: left;
-        font-size: inherit;
-        padding: 0 50px;
-        line-height: 30px;
-        font-weight: normal;
-    }
-
-    h3 span {
-        color: gold;
-        display: inline-block;
-        font-size: smaller;
-    }
-
-
-    h3:before {
-        content: "\f144";
-        font-family: FontAwesome;
-    }
-
-    h3:hover {
-        cursor: pointer;
-    }
-
-
-    h4 {
-        text-align: center;
-        line-height: 35px;
-        padding-left: 30px;
-        padding-right: 30px;
-        font-weight: normal;
-    }
-
-    h5 {
-        color: white;
-        padding-left: 30px;
-        font-weight: normal;
-    }
-
-    p.schoolDiary{
-        font-size: 10pt;
+    .video-grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 15px;
         padding: 20px;
-        margin: 0;
-
     }
-    .schoolDiary a{
-        color: gold;
-        font-size: inherit;
-    }
+    
 }
