@@ -4,47 +4,59 @@ $( ".accordion" ).accordion({
   heightStyle: "content"
 });
 
-
-$(".hamburger").click(function(){
-  $("#myLinks").toggle(500);
+// Άνοιγμα Sidebar
+document.getElementById('openSidebar').addEventListener('click', function() {
+  document.getElementById('sidebar').classList.add('active');
+  showMainMenu();
 });
 
+// Κλείσιμο Sidebar
+function closeSidebar() {
+  document.getElementById('sidebar').classList.remove('active');
+  setTimeout(() => {
+      showMainMenu(); // Επαναφορά στο αρχικό μενού μετά το κλείσιμο
+  }, 300);
+}
 
-$(document).ready(function(){
-    $("#junior").click(function(event){
-      event.stopPropagation();
-      $("#juniorIndex").slideToggle();
-    });
-    $("#juniorIndex").on("click", function(event){
-      event.stopPropagation();
-    });
-    $("#high").click(function(event){
-      event.stopPropagation();
-      $("#highIndex").slideToggle();
-    });
-    $("#highIndex").on("click", function(event){
-      event.stopPropagation();
-    });
-    $("#material").click(function(event){
-      event.stopPropagation();
-      $("#materialIndex").slideToggle();
-    });
-    $("#materialIndex").on("click", function(event){
-      event.stopPropagation();
-    });
-});
+// Άνοιγμα υπομενού με animation
+function openSubmenu(submenuId) {
+  // Απόκρυψη όλων των μενού
+  document.querySelectorAll('.menu').forEach(menu => {
+      menu.classList.remove('active');
+      setTimeout(() => {
+          menu.style.display = 'none';
+      }, 300);
+  });
 
-$(document).on("click", function(){
-  $("#juniorIndex").hide();
-  $("#highIndex").hide(); 
-  $("#materialIndex").hide(); 
-});
+  // Εμφάνιση του επιλεγμένου υπομενού
+  setTimeout(() => {
+      let submenu = document.getElementById(submenuId);
+      submenu.style.display = 'block';
+      setTimeout(() => submenu.classList.add('active'), 10);
+  }, 300);
+}
 
+// Επιστροφή στο βασικό μενού
+function goBack() {
+  showMainMenu();
+}
 
+// Εμφάνιση του βασικού μενού με animation
+function showMainMenu() {
+  document.querySelectorAll('.submenu').forEach(menu => {
+      menu.classList.remove('active');
+      setTimeout(() => {
+          menu.style.display = 'none';
+      }, 300);
+  });
 
+  setTimeout(() => {
+      let mainMenu = document.querySelector('.main-menu');
+      mainMenu.style.display = 'block';
+      setTimeout(() => mainMenu.classList.add('active'), 10);
+  }, 300);
+}
 
-
- 
 let v = document.getElementsByClassName("youtube-player"); 
   
 for (let n = 0; n < v.length; n++) { 
@@ -65,33 +77,7 @@ for (let n = 0; n < v.length; n++) {
       }; 
     } 
 
-    var modalAGym = document.getElementById("AGymInfo");
-    /* var modalBGym = document.getElementById("BGymInfo");
-    var modalGGym = document.getElementById("GGymInfo");
-    var modalALyk = document.getElementById("ALykInfo");
-    var modalBLyk = document.getElementById("BLykInfo");
-    var modalGLyk = document.getElementById("GLykInfo");
-    var modalPanep = document.getElementById("PanepInfo");*/
-
-    var modalBtnAGym = document.getElementById("modalBtnAGym");
-    var closeBtn = document.querySelector(".close");
-
-    // Όταν πατάς το κουμπί, εμφανίζεται το modal
-    modalBtnAGym.onclick = function() {
-      modalAGym.style.display = "block";
-    }
-
-    // Όταν πατάς το X, κλείνει το modal
-    closeBtn.onclick = function() {
-        modalAGym.style.display = "none";
-    }
-
-    // Όταν κάνεις κλικ έξω από το modal, κλείνει
-    window.onclick = function(event) {
-        if (event.target == modalAGym) {
-            modalAGym.style.display = "none";
-        }
-    }
+    
 
 
 
