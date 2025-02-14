@@ -87,6 +87,12 @@ breadcrumbs.forEach((item, index) => {
 // Προσθήκη των breadcrumbs στο DOM
 breadcrumbContainer.innerHTML = breadcrumbHTML;
 
+// Συνάρτηση για να κόβει τα επόμενα breadcrumbs όταν επιλέγεται ένα προηγούμενο
+function trimBreadcrumb(index) {
+  let updatedBreadcrumbs = breadcrumbs.slice(0, index + 1); // Κρατάει μόνο τα προηγούμενα
+  localStorage.setItem("breadcrumbs", JSON.stringify(updatedBreadcrumbs)); // Αποθήκευση νέας λίστας
+}
+
 let v = document.getElementsByClassName("youtube-player"); 
   
 for (let n = 0; n < v.length; n++) { 
