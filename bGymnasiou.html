@@ -5,31 +5,24 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta property="og:image" content="mathvideosthumb.png" />
-        <title>Γ' Γυμνασίου Γεωμετρία</title>
+        <title>B' Γυμνασίου</title>
         
         <!-- My Style css --> <link rel="stylesheet" href="style.css">
-        <!-- Mobile Style css --> <link rel="stylesheet" href="mobile.css">
         <!-- My JavaScript load --><script defer src="javaScript.js" ></script>
         <!-- LaTeX Equations -->
             <script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
             </script>
         <!-- Fonts load -->
-            <link rel="preconnect" href="https://fonts.googleapis.com"> 
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-            <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
-            <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-            rel="stylesheet">
-        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-            <script src="https://kit.fontawesome.com/4f7094dc46.js" crossorigin="anonymous"></script>     
+            <!--Fonts CMU Serif-->
+            <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/cmu-serif" type="text/css"/>
         <!-- Accordion -->
             <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
             <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-            
     </head>
+    
 
     <body>
+        
         <!-- Κουμπί ανοίγματος sidebar -->
         <button id="openSidebar">☰</button>
 
@@ -79,26 +72,37 @@
         
         
         <div>
-            <img src="images/bannerMathVideosBig.png" alt="bannerMathVideos" style="width: 100%">
+            <img src="images/bannerMathVideosBig.png" alt="bannerMathVideos" style="width: 100%; margin-top: 20px;">
         </div>
         
         <!-- Σταθερή breadcrumb navigation bar -->
         <div class="breadcrumb" id="breadcrumb"></div>
-        
-        <h1>Μαθηματικά Γ' Γυμνασίου</h1>
-        <h1 class="schoolDiary">Μέρος Δεύτερο: Γεωμετρία</h1>
-        
-        
-        <div class="section">
-            <h2 class="schoolDiary">Κεφάλαιο 1: Γεωμετρία</h2>
-            
-            <ul class="schoolDiary">
-                <li class="schoolDiary">1.1 - Ισότητα Τριγώνων</li>
-                <p class="schoolDiary">
-                    Στις σημειώσεις αυτές αναφέρονται τα κριτήρια ισότητας τριγώνων και ορθογωνίων τριγώνων μαζί με τις λύσεις των ασκήσεων του βιβλίου. <br>
-                    Κατεβάστε τες <a href="/gGymnasiou/isotitaTrigonon.pdf">εδώ</a>.
+
+        <div class="courseDescription">
+            <!-- Πρώτη στήλη: Άλγεβρα B' Γυμνασίου -->
+            <div class="courseColumn">
+                <h2>Άλγεβρα B' Γυμνασίου</h2>
+                <p>
+                    Η άλγεβρα της B' Γυμνασίου ασχολείται με τις εξισώσεις πρώτου βαθμού, τις τετραγωνικές ρίζες και τους άρρητους αριθμούς. Στη συνέχεια με την έννοια της συνάρτησης και της γραφικής παράστασης μίας συνάρτησης καθώς και με μία εισαγωγή στη στατιστική.  
                 </p>
-            </ul>
+                <div class="courseButton" onclick="location.href='aGymnasiouAlgebra.html';">
+                    Μετάβαση στο μάθημα
+                </div>
+            </div>
+        
+            <!-- Δεύτερη στήλη: Γεωμετρία B' Γυμνασίου -->
+            <div class="courseColumn">
+                <h2>Γεωμετρία B' Γυμνασίου</h2>
+                <p>Η Γεωμετρία της Β' Γυνμασίου ασχολείται αρχικά με εμβαδά επίπεδων σχημάτων, στη συνέχεια βλέπουμε το Πυθαγόρειο Θεώρημα. Έπειτα κάνει μια εισαγωγή στην τριγωνομετρία με τις έννοιες της εφαπτομένης, του ημιτόνου και του συνημιτόνου. Ύστερα με εγγεγραμμένες γωνίες, κανονικά πολύγωνα και τέλος με τον κύκλο και τα στοιχεία του. </p>
+                
+                <div class="courseButton" onclick="location.href='aGymnasiouGeometria.html';">
+                    Μετάβαση στο μάθημα
+                </div>
+            </div>
+        </div>
+
+        <div class="footer" style="text-align: center; color: chartreuse; font-size: 10pt;">
+            Η ιστοσελίδα mathVideos δημιουργήθηκε από τον Χριστόφορο Παπανικολάου στα πλαίσια ενός διαδικτυακού μαθήματος HTML CSS και JavaScript που παρακολούθησε.
         </div>
     </body>
 </html>

@@ -57,6 +57,36 @@ function showMainMenu() {
   }, 300);
 }
 
+// Λήψη του breadcrumb container
+let breadcrumbContainer = document.getElementById("breadcrumb");
+
+// Ανάκτηση του ιστορικού από το localStorage ή αρχικοποίηση νέου
+let breadcrumbs = JSON.parse(localStorage.getItem("breadcrumbs")) || [];
+
+// Λήψη της τρέχουσας σελίδας
+let currentPage = document.title;
+let currentURL = window.location.pathname;
+
+// Προσθήκη της τρέχουσας σελίδας στη λίστα, αν δεν υπάρχει ήδη
+if (!breadcrumbs.some(item => item.url === currentURL)) {
+    breadcrumbs.push({ title: currentPage, url: currentURL });
+}
+
+// Αποθήκευση της ενημερωμένης λίστας στο localStorage
+localStorage.setItem("breadcrumbs", JSON.stringify(breadcrumbs));
+
+// Δημιουργία HTML για τα breadcrumbs
+let breadcrumbHTML = `<a href="/">Αρχική</a>`;
+
+breadcrumbs.forEach((item, index) => {
+    if (index !== 0) {
+        breadcrumbHTML += ` > <a href="${item.url}">${item.title}</a>`;
+    }
+});
+
+// Προσθήκη των breadcrumbs στο DOM
+breadcrumbContainer.innerHTML = breadcrumbHTML;
+
 let v = document.getElementsByClassName("youtube-player"); 
   
 for (let n = 0; n < v.length; n++) { 

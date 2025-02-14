@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:image" content="mathvideosthumb.png" />
-    <title>mathVideos.gr</title>
+    <title>Β' Λυκείου Άλγεβρα</title>
     
     <!-- My Style css --> <link rel="stylesheet" href="style.css">
     <!-- Mobile Style css --> <link rel="stylesheet" href="mobile.css">
@@ -32,54 +32,60 @@
 
 <body>
 
-    <div class="navbar">
-    
-        <a href="index.html"><img src="images/mathVideos.jpg"></a>
+    <!-- Κουμπί ανοίγματος sidebar -->
+    <button id="openSidebar">☰</button>
 
-        <!-- Navigation links (hidden by default) -->
-        <div id="myLinks">
-            <div class="dropdownMenu"> 
-                <div id="junior">Γυμνάσιο</div>
-                
-                <div class="dropdown-content" id="juniorIndex">
-                    <a href="aGymnasiou.html">A' Γυμνασίου</a>
-                    <a href="bGymnasiou.html">Β' Γυμνασίου</a>
-                    <a href="gGymnasiou.html">Γ' Γυμνασίου</a>
-                </div>
-            </div>
-        
-            <div class="dropdownMenu">
-                <div id="high">Λύκειο</div>
-                    
-                <div class="dropdown-content" id="highIndex">
-                        <a href="aLykeiou.html">A' Λυκείου</a>
-                        <a href="bLykeiou.html">Β' Λυκείου</a>
-                        <a href="gLykeiou.html">Γ' Λυκείου</a>
-                    </div>
-            </div>
-            
-            <div class="dropdownMenu">
-                <div id="material">Υλικό</div>
-                    
-                <div class="dropdown-content" id="materialIndex">
-                        <a href="https://apps1.minedu.gov.gr/efarmoges/themata.php">Θέματα Πανελληνίων</a>
-                        <a href="https://trapeza-thematon.gr">Τράπεζα Θεμάτων Μεθοδικό</a>
-                </div>
-            </div>
+    <!-- Sidebar Menu -->
+    <div id="sidebar" class="sidebar">
+        <div class="menu main-menu"> <!-- Το βασικό μενού με τις τάξεις -->
+            <h2>Η τάξη σου;</h2>
+            <button class="close-btn" onclick="closeSidebar()">×</button> <!-- Το κουμπί κλεισίματος -->
+            <ul>
+                <li><button onclick="openSubmenu('submenu-a')">Α' Γυμνασίου</button></li>
+                <li><button onclick="openSubmenu('submenu-b')">Β' Γυμνασίου</button></li>
+                <li><button onclick="openSubmenu('submenu-c')">Γ' Γυμνασίου</button></li>
+            </ul>
         </div>
-    
 
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a class="hamburger">
-            <i class="fa fa-bars"></i>
-        </a>
+        <!-- Υπομενού για Α' Γυμνασίου -->
+        <div class="menu submenu" id="submenu-a">
+            <button class="back-btn" onclick="goBack()">← Πίσω</button> <!-- Το κουμπί πίσω -->
+            <h2>Α' Γυμνασίου</h2>
+            <ul>
+                <li><a href="aGymnasiouAlgebra.html" class="menu-link">Άλγεβρα Α' Γυμνασίου</a></li>
+                <li><a href="aGymnasiouGeometria.html" class="menu-link">Γεωμετρία Α' Γυμνασίου</a></li>
+            </ul>
+        </div>
 
+        <!-- Υπομενού για Β' Γυμνασίου -->
+        <div class="menu submenu" id="submenu-b">
+            <button class="back-btn" onclick="goBack()">← Πίσω</button>
+            <h2>Β' Γυμνασίου</h2>
+            <ul>
+                <li><a href="bGymnasiouAlgebra.html" class="menu-link">Άλγεβρα Β' Γυμνασίου</a></li>
+                <li><a href="bGymnasiouGeometria.html" class="menu-link">Γεωμετρία Β' Γυμνασίου</a></li>
+            </ul>
+        </div>
+
+        <!-- Υπομενού για Γ' Γυμνασίου -->
+        <div class="menu submenu" id="submenu-c">
+            <button class="back-btn" onclick="goBack()">← Πίσω</button>
+            <h2>Γ' Γυμνασίου</h2>
+            <ul>
+                <li><a href="gGymnasiouAlgebra.html" class="menu-link">Άλγεβρα Γ' Γυμνασίου</a></li>
+                <li><a href="gGymnasiouGeometria.html" class="menu-link">Γεωμετρία Γ' Γυμνασίου</a></li>
+            </ul>
+        </div>
     </div>
+    
     
     
     <div>
-        <img src="images/bannerMathVideosNew (1).png" alt="bannerMathVideos" style="width: 100%">
+        <img src="images/bannerMathVideosBig.png" alt="bannerMathVideos" style="width: 100%">
     </div>
+    
+    <!-- Σταθερή breadcrumb navigation bar -->
+    <div class="breadcrumb" id="breadcrumb"></div>
 
     <h1 class="welcome">Καλωσήρθες στην Άλγεβρα της Β' Λυκείου</h1>
     <div class="video-grid">
