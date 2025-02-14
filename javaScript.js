@@ -68,30 +68,43 @@ let currentPage = document.title;
 let currentURL = window.location.pathname;
 
 // Προσθήκη της τρέχουσας σελίδας στη λίστα, αν δεν υπάρχει ήδη
-if (!breadcrumbs.some(item => item.url === currentURL)) {
+if (!breadcrumbs.find(item => item.url === currentURL)) {
     breadcrumbs.push({ title: currentPage, url: currentURL });
 }
 
 // Αποθήκευση της ενημερωμένης λίστας στο localStorage
 localStorage.setItem("breadcrumbs", JSON.stringify(breadcrumbs));
 
-// Δημιουργία HTML για τα breadcrumbs
-let breadcrumbHTML = `<a href="/">Αρχική</a>`;
+// Συνάρτηση που δημιουργεί το breadcrumb
+function updateBreadcrumb() {
+    let breadcrumbHTML = `<a href="/" onclick="resetBreadcrumb()">Αρχική</a>`;
+    
+    breadcrumbs.forEach((item, index) => {
+        if (index !== 0) {
+            breadcrumbHTML += ` > <a href="${item.url}" onclick="trimBreadcrumb(${index})">${item.title}</a>`;
+        }
+    });
 
-breadcrumbs.forEach((item, index) => {
-    if (index !== 0) {
-        breadcrumbHTML += ` > <a href="${item.url}">${item.title}</a>`;
-    }
-});
+    breadcrumbContainer.innerHTML = breadcrumbHTML;
+}
 
-// Προσθήκη των breadcrumbs στο DOM
-breadcrumbContainer.innerHTML = breadcrumbHTML;
+// Συνάρτηση για να καθαρίζει το breadcrumb όταν πατάμε "Αρχική"
+function resetBreadcrumb() {
+    localStorage.removeItem("breadcrumbs"); // Διαγραφή ιστορικού
+    breadcrumbs = []; // Καθαρίζουμε τον πίνακα
+    updateBreadcrumb(); // Ενημέρωση του breadcrumb
+}
 
 // Συνάρτηση για να κόβει τα επόμενα breadcrumbs όταν επιλέγεται ένα προηγούμενο
 function trimBreadcrumb(index) {
-  let updatedBreadcrumbs = breadcrumbs.slice(0, index + 1); // Κρατάει μόνο τα προηγούμενα
-  localStorage.setItem("breadcrumbs", JSON.stringify(updatedBreadcrumbs)); // Αποθήκευση νέας λίστας
+    breadcrumbs = breadcrumbs.slice(0, index + 1); // Κρατάει μόνο τα προηγούμενα
+    localStorage.setItem("breadcrumbs", JSON.stringify(breadcrumbs)); // Αποθήκευση νέας λίστας
+    updateBreadcrumb(); // Ενημέρωση breadcrumb
 }
+
+// Κλήση της συνάρτησης για να εμφανιστεί το breadcrumb σωστά
+updateBreadcrumb();
+
 
 let v = document.getElementsByClassName("youtube-player"); 
   

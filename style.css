@@ -1,6 +1,6 @@
 body {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 25pt;
+    font-size: 1.5vw;
     color: white;
     background-color: #333;
 }
@@ -21,7 +21,7 @@ body {
     background: #333;
     color: white;
     padding: 10px 20px;
-    font-size: 14px;
+    font-size: 1.1vw;
     z-index: 1000;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -103,8 +103,8 @@ body {
 #openSidebar {
     font-size: 30px;
     padding: 10px 15px; 
-    background-color: transparent;
-    color: black;
+    background-color: #333;
+    color: white;
     border: none;
     cursor: pointer;
     position: fixed;
@@ -122,6 +122,8 @@ body {
     height: 100%;
     background: #333;
     color: white;
+    z-index: 1000;
+    opacity: 0.9;
     transition: left 0.4s ease-in-out; /* Animation για smooth εμφάνιση */
     overflow-x: hidden;
     padding-top: 20px;
@@ -188,6 +190,7 @@ body {
 
 .menu ul li {
     margin: 10px 0;
+    font-size: medium;
 }
 
 .menu ul li button {
@@ -195,8 +198,6 @@ body {
     padding: 12px;
     background: #444;
     color: white;
-    font-family: inherit;
-    font-size: inherit;
     border: none;
     text-align: left;
     cursor: pointer;
@@ -223,6 +224,7 @@ body {
 /* Στυλ για τους συνδέσμους */
 .menu-link {
     display: block;
+    font-size: medium;
     width: 100%;
     padding: 12px;
     background: #444;
@@ -282,14 +284,13 @@ body {
 
 /* Στυλ για τις επικεφαλίδες */
 .courseColumn h2 {
-    font-size: 20pt;
+    font-size: medium;
     margin-bottom: 10px;
     color: gold;
 }
 
 /* Στυλ για την περιγραφή */
 .courseColumn p {
-    font-size: 18pt;
     color: white;
     margin-bottom: 15px;
 }
