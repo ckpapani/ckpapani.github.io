@@ -57,6 +57,19 @@ function showMainMenu() {
   }, 300);
 }
 
+function adjustSidebarAndBannerPosition() {
+  let breadcrumbHeight = document.querySelector(".breadcrumb").offsetHeight;
+  let bannerHeight = document.querySelector(".banner").offsetHeight;
+  document.querySelector("#openSidebar").style.marginTop = breadcrumbHeight + "px";
+  document.querySelector(".banner").style.marginTop = breadcrumbHeight + "px";
+}
+
+// Εκτελείται όταν φορτώνεται η σελίδα
+window.onload = adjustSidebarAndBannerPosition;
+
+// Εκτελείται όταν αλλάζει το μέγεθος του παραθύρου
+window.onresize = adjustSidebarAndBannerPosition;
+
 // Λήψη του breadcrumb container
 let breadcrumbContainer = document.getElementById("breadcrumb");
 

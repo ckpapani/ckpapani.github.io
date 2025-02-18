@@ -1,6 +1,5 @@
 body {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.5vw;
     color: white;
     background-color: #333;
 }
@@ -19,10 +18,11 @@ body {
     left: 0;
     width: 100%;
     background: #333;
-    color: white;
+    color: yellow;
     padding: 10px 20px;
-    font-size: 1.1vw;
-    z-index: 1000;
+    display: flex;
+    flex-wrap: wrap; /* Επιτρέπει στα breadcrumbs να πηγαίνουν σε πολλές γραμμές */
+    align-items: center;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -50,10 +50,10 @@ body {
     width: fit-content;
     margin: 0 auto;
 }
+
 .course{
     background-color:#50543f;
-    border-radius: 20pt;
-    margin: 10pt;
+    border-radius: 100%;
     padding: 15pt;
     border: 1px solid white;
     min-height: 10px;
@@ -83,7 +83,6 @@ body {
 }
 .play-button::before {
     content: "▶";
-    font-size: 24px;
     color: white;
 }
 .video-container iframe {
@@ -100,17 +99,18 @@ body {
     text-align: center; 
 }
 
+.banner{
+    width: 100%;
+}
+
 #openSidebar {
-    font-size: 30px;
-    padding: 10px 15px; 
-    background-color: #333;
-    color: white;
     border: none;
     cursor: pointer;
     position: fixed;
-    top: 40px;
+    top: 10px;
     left: 20px;
     border-radius: 5px;
+    font-size: large;
 }
 
 /* Sidebar */
@@ -159,7 +159,6 @@ body {
     background: red;
     border: none;
     color: white;
-    font-size: 20px;
     cursor: pointer;
     padding: 5px 10px;
     border-radius: 5px;
@@ -190,12 +189,12 @@ body {
 
 .menu ul li {
     margin: 10px 0;
-    font-size: medium;
 }
 
 .menu ul li button {
     width: 100%;
     padding: 12px;
+    font-size: large;
     background: #444;
     color: white;
     border: none;
@@ -224,7 +223,6 @@ body {
 /* Στυλ για τους συνδέσμους */
 .menu-link {
     display: block;
-    font-size: medium;
     width: 100%;
     padding: 12px;
     background: #444;
@@ -272,7 +270,6 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: justify;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
@@ -284,21 +281,19 @@ body {
 
 /* Στυλ για τις επικεφαλίδες */
 .courseColumn h2 {
-    font-size: medium;
     margin-bottom: 10px;
     color: gold;
+    text-align: left;
 }
 
 /* Στυλ για την περιγραφή */
 .courseColumn p {
-    color: white;
     margin-bottom: 15px;
 }
 
 /* Στυλ για το κουμπί */
 .courseButton {
     background: #333;
-    color: white;
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
@@ -312,11 +307,32 @@ body {
     transform: scale(1.1);
 }
 
+.footer{
+    text-align: center; 
+    color: chartreuse; 
+    margin-bottom: 10px;
+    font-size: 10pt;
+}
+
 /* Responsive: Στις μικρές οθόνες οι στήλες γίνονται κάθετες */
 @media (max-width: 768px) {
     .courseDescription {
         flex-direction: column;
     }
+    .courses-container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .course{
+        background-color:#50543f;
+        padding: 15pt;
+        border: 1px solid white;
+        text-align: center;
+        min-height: 10px;
 }
 
 
