@@ -38,12 +38,16 @@
     <!-- Sidebar Menu -->
     <div id="sidebar" class="sidebar">
         <div class="menu main-menu"> <!-- Το βασικό μενού με τις τάξεις -->
-            <h2>Η τάξη σου;</h2>
+            <h3>Η τάξη σου;</h3>
             <button class="close-btn" onclick="closeSidebar()">×</button> <!-- Το κουμπί κλεισίματος -->
             <ul>
                 <li><button onclick="openSubmenu('submenu-a')">Α' Γυμνασίου</button></li>
                 <li><button onclick="openSubmenu('submenu-b')">Β' Γυμνασίου</button></li>
                 <li><button onclick="openSubmenu('submenu-c')">Γ' Γυμνασίου</button></li>
+                <li><button onclick="openSubmenu('submenu-d')">Α' Λυκείου</button></li>
+                <li><button onclick="openSubmenu('submenu-e')">Β' Λυκείου</button></li>
+                <li><button onclick="openSubmenu('submenu-f')">Γ' Λυκείου</button></li>
+                <li><button onclick="openSubmenu('submenu-g')">Πανεπιστήμιο</button></li>
             </ul>
         </div>
 
@@ -76,16 +80,54 @@
                 <li><a href="gGymnasiouGeometria.html" class="menu-link">Γεωμετρία Γ' Γυμνασίου</a></li>
             </ul>
         </div>
+
+        <!-- Υπομενού για Α' Λυκείου -->
+        <div class="menu submenu" id="submenu-d">
+            <button class="back-btn" onclick="goBack()">← Πίσω</button>
+            <h2>Α' Λυκείου</h2>
+            <ul>
+                <li><a href="aLykeiouAlgebra.html" class="menu-link">Άλγεβρα Α' Λυκείου</a></li>
+                <li><a href="aLykeiouGeometria.html" class="menu-link">Γεωμετρία Α' Λυκείου</a></li>
+            </ul>
+        </div>
+
+        <!-- Υπομενού για Β' Λυκείου -->
+        <div class="menu submenu" id="submenu-e">
+            <button class="back-btn" onclick="goBack()">← Πίσω</button>
+            <h2>Β' Λυκείου</h2>
+            <ul>
+                <li><a href="bLykeiouAlgebra.html" class="menu-link">Άλγεβρα Β' Λυκείου</a></li>
+                <li><a href="bLykeiouGeometria.html" class="menu-link">Γεωμετρία Β' Λυκείου</a></li>
+                <li><a href="bLykeiouProsan.html" class="menu-link">Β' Λυκείου Προσανατολισμού</a></li>
+            </ul>
+        </div>
+
+        <!-- Υπομενού για Γ' Λυκείου -->
+        <div class="menu submenu" id="submenu-f">
+            <button class="back-btn" onclick="goBack()">← Πίσω</button>
+            <h2>Γ' Γυμνασίου</h2>
+            <ul>
+                <li><a href="gLykeiouPithanStat.html" class="menu-link">Πιθανότητες και Στατιστική</a></li>
+                <li><a href="gLykeiouProsanatolismou.html" class="menu-link">Γ' Λυκείου Προσανατολισμού</a></li>
+            </ul>
+        </div>
+
+        <!-- Υπομενού για Πανεπιστήμιο -->
+        <div class="menu submenu" id="submenu-g">
+            <button class="back-btn" onclick="goBack()">← Πίσω</button>
+            <h2>Πανεπιστήμιο</h2>
+            <ul>
+                <li><a href="diaforikes.html" class="menu-link">Διαφορικές Εξισώσεις</a></li>
+                <li><a href="grammiki.html" class="menu-link">Γραμμική Άλγεβρα</a></li>
+            </ul>
+        </div>
     </div>
-    
-    
-    
-    <div>
-        <img src="images/bannerMathVideosBig.png" alt="bannerMathVideos" style="width: 100%">
-    </div>
-    
+
     <!-- Σταθερή breadcrumb navigation bar -->
     <div class="breadcrumb" id="breadcrumb"></div>
+    
+
+    <img src="images/bannerMathVideosBig.png" alt="bannerMathVideos" class="banner">
 
     <h1 class="welcome">Καλωσήρθες στη Γεωμετρία της Α' Λυκείου</h1>
     <div class="video-grid">
