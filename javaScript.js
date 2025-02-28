@@ -80,6 +80,13 @@ let breadcrumbs = JSON.parse(localStorage.getItem("breadcrumbs")) || [];
 let currentPage = document.title;
 let currentURL = window.location.pathname;
 
+// Αν η σελίδα είναι η πρώτη που επισκέπτεται ο χρήστης, μην εμφανίσεις το breadcrumb
+if (breadcrumbs.length === 0) {
+  breadcrumbContainer.style.display = "none"; // Απόκρυψη του breadcrumb
+} else {
+  breadcrumbContainer.style.display = "block"; // Εμφάνιση του breadcrumb
+}
+
 // Προσθήκη της τρέχουσας σελίδας στη λίστα, αν δεν υπάρχει ήδη
 if (!breadcrumbs.find(item => item.url === currentURL)) {
     breadcrumbs.push({ title: currentPage, url: currentURL });
