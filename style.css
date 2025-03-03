@@ -294,8 +294,19 @@ body {
         color: white;
     }
 
+    .video-grid{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 15px;
+        padding: 20px;
+        background-color: #50543f;
+        margin: 20px;
+        border-radius: 10px;
+    }
     .video-item {
-        border: 2px solid #50543f;
+        padding: 0 auto;
+        border: 1px solid gold;
+        border-radius: 10px;
     }
     .video-container iframe {
         position: absolute;
@@ -340,6 +351,7 @@ body {
     .courseDescription {
         flex-direction: column;
     }
+    
 }
 
 /* Στυλ για μεγάλα κινητά */
@@ -375,6 +387,9 @@ body {
         grid-template-columns: repeat(2,1fr);
         gap: 15px;
         padding: 20px;
+        background-color: #50543f;
+        margin: 20px;
+        border-radius: 10px;
     }
     
 }
@@ -394,6 +409,9 @@ body {
         grid-template-columns: repeat(3,1fr);
         gap: 15px;
         padding: 20px;
+        background-color: #50543f;
+        margin: 20px;
+        border-radius: 10px;
     }
     
 }
