@@ -5,31 +5,24 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta property="og:image" content="mathvideosthumb.png" />
-        <title>Γ' Γυμνασίου Γεωμετρία</title>
+        <title>Γ' Γυμνασίου</title>
         
         <!-- My Style css --> <link rel="stylesheet" href="style.css">
-        <!-- Mobile Style css --> <link rel="stylesheet" href="mobile.css">
         <!-- My JavaScript load --><script defer src="javaScript.js" ></script>
         <!-- LaTeX Equations -->
             <script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
             </script>
         <!-- Fonts load -->
-            <link rel="preconnect" href="https://fonts.googleapis.com"> 
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-            <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
-            <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-            rel="stylesheet">
-        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-            <script src="https://kit.fontawesome.com/4f7094dc46.js" crossorigin="anonymous"></script>     
+            <!--Fonts CMU Serif-->
+            <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/cmu-serif" type="text/css"/>
         <!-- Accordion -->
             <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
             <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-            
     </head>
+    
 
     <body>
+        
         <!-- Κουμπί ανοίγματος sidebar -->
         <button id="openSidebar">☰</button>
 
@@ -126,8 +119,37 @@
         
     
         <img src="images/bannerMathVideosBig.png" alt="bannerMathVideos" class="banner">
+
+        <div class="courseDescription">
+            <!-- Πρώτη στήλη: Άλγεβρα Γ' Γυμνασίου -->
+            <div class="courseColumn">
+                <h2>Άλγεβρα Γ' Γυμνασίου</h2>
+                <p>
+                    Η άλγεβρα της Γ' Γυμνασίου ασχολείται με αλγεβρικές παραστάσεις. Αρχικά στο πρώτο κεφάλαιο βλέπουμε τις πράξεις με αλγεβρικές παραστάσεις, την παραγοντοποίηση αλγεβρικών παραστάσεων, το ΕΚΠ και ΜΚΔ και στη συνέχεια τις πράξεις με ρητές παραστάσεις.  
+                </p>
+                <p>
+                    Στο δεύτερο κεφάλαιο βλέπουμε πώς λύνουμε εξισώσεις δευτέρου βαθμού και στο τρίτο και τελευταίο κεφάλαιο βλέπουμε τι είναι τα συστήματα εξισώσεων και πώς τα λύνουμε. 
+                </p>
+                <div class="courseButton" onclick="location.href='gGymnasiouAlgebra.html';">
+                    Μετάβαση στο μάθημα
+                </div>
+            </div>
         
-        <h1 class="welcome">Καλωσήρθες στη Γεωμετρία τις Γ' Γυμνασίου</h1>
-        <h2 class="welcome">Δυστυχώς δεν έχω έτοιμα video ακόμα!</h2>
+            <!-- Δεύτερη στήλη: Γεωμετρία Γ' Γυμνασίου -->
+            <div class="courseColumn">
+                <h2>Γεωμετρία Γ' Γυμνασίου</h2>
+                <p>
+                    Η Γεωμετρία της Γ' Γυμνασίου αρχίζει με τη μελέτη της ισότητας τριγώνων, το λόγο ευθύγραμμων τμημάτων και το Θεώρημα του Θαλή. Στο δεύτερο και τελευταίο κεφάλαιο ασχολείται με την τριγωνομετρία και συγκεκριμένα με τους τριγωνομετρικούς αριθμούς γωνίας \(ω\) με \(0\leq \omega \leq 180^\circ\)
+                </p>
+                
+                <div class="courseButton" onclick="location.href='gGymnasiouGeometria.html';">
+                    Μετάβαση στο μάθημα
+                </div>
+            </div>
+        </div>
+
+        <div class="footer" style="text-align: center; color: chartreuse; font-size: 10pt;">
+            Η ιστοσελίδα mathVideos δημιουργήθηκε από τον Χριστόφορο Παπανικολάου στα πλαίσια ενός διαδικτυακού μαθήματος HTML CSS και JavaScript που παρακολούθησε.
+        </div>
     </body>
 </html>
